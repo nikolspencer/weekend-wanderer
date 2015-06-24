@@ -87,8 +87,7 @@
             <article>
                 <h3>Choose your own adventure.</h3>
                 <p>Adventure is everywhere. Where will you find yours?</p>
-                <a href="#">
-                </a>
+                <a href="#" class="build-button">Dream Weekend</a>
             </article>
         </div>
     </div>
@@ -103,6 +102,7 @@
                     <a href="#" class="more-link">View more</a>
                 </div>
             </article>
+            
             <article style="background-image: url('images/article-image-2.jpg');">
                 <div class="overlay">
                     <h4>Deals &amp; Discounts</h4>
@@ -111,13 +111,17 @@
                     <a href="#" class="more-link">View more</a>
                 </div>
             </article>
-            <div class="clear"></div>
+            
+            
         </div>
+      
     </div>
-
+  <div class="clear"></div>
+    
     <footer>
-        <div id="footer-links">
-            <ul>
+        <div class="footer-contain">
+            <div class="footer-col">
+            <ul class="sub nav">
                 <li><a href="#"><h5>Home</h5></a>
                 </li>
                 <li><a href="#"><h5>Adventures</h5></a>
@@ -125,37 +129,41 @@
                 <li><a href="#"><h5>Blog</h5></a>
                 </li>
             </ul>
+        </div>
+        
+        <div class="footer-col">
             <ul>
                 <li><a href="#"><h5>Mission</h5></a>
                 </li>
                 <li><a href="#"><h5>Our Team</h5></a>
                 </li>
-                <li><a href="#"><h5>Contuact Us</h5></a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h5>Subscribe to Newsletter</h5>
-                </li>
-                <li><a href="#">First Name</a>
-                </li>
-                <li><a href="#">Last Name</a>
-                </li>
-                <li><a href="#">Email</a>
+                <li><a href="#"><h5>Contact Us</h5></a>
                 </li>
             </ul>
         </div>
-
-        <div class="wrapper">
-            <div id="footer-info">
-                <p>2015&copy; Weekend Wanderers. All rights reserved.</p>
-                <p><a href="#">Terms of Service</a> &#124; <a href="#">Privacy</a>
-                </p>
-            </div>
-            <div class="clear"></div>
+            
+        
+            <div class="footer-form">
+        <form id="signup">
+            <h5><strong>Subscribe to Newsletter</strong></h5>
+                <input id="form" type="text" name="first_name" placeholder="First Name">
+            <input id="form" type="text" name="last_name" placeholder="Last Name">
+            <input id="form" type="email" name="email" placeholder="Email">
+                </form>
+                     <div class="clear"></div>
         </div>
     </footer>
 
 </body>
 
 </html>
+
+<!-- 
+<div class="wrapper">
+            <div id="footer-info">
+                <p>2015&copy; Weekend Wanderers. All rights reserved.</p>
+                <p><a href="#">Terms of Service</a> &#124; <a href="#">Privacy</a>
+                </p>
+            </div>
+
+-->

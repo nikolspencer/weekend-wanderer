@@ -55,9 +55,8 @@ h4 {
 }
 
 h5 {
-    font-size: 1em;
-    color: #444;
-    font-weight: bold;
+    font-size: .8em;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -285,15 +284,15 @@ header nav ul li a {
     color: #242424;
     text-align: left;
     padding: 0;
-    padding-top: 75px;
+    padding-top: 100px;
 }
 
 #build p {
     font-size: 15px;
     letter-spacing: .2em;
     text-align: left;
-    max-width: 40%;
-    margin-bottom: 75px;
+/*    max-width: 40%; */
+    margin-bottom: 55px;
     line-height: 1.5em;
 }
 
@@ -301,9 +300,30 @@ header nav ul li a {
     margin: 20px 0;
 }
 
+/* Dream Weekend Button needs a color */
+.build-button {
+    float: left;
+    text-align: center;
+    background-color: #02b8dd;
+    border-radius: 3px;
+    color: #000;
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: .2em;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.build-button:hover {
+    background-color: #000;
+    color:#fff;
+}
+
 /*Blog Content*/
 
 #blog-content {
+    float: right;
     padding: 60px 0;
     text-align: center;
 }
@@ -343,14 +363,74 @@ article h4 {
     color: #fff;
 }
 
-/*Call to Action*/
+/*Footer*/
 
-#cta {
-    padding: 60px 0;
-    text-align: center;
+footer {
+    display: block;
+    background: #1f1f1f;
+    overflow: hidden;
+    position: relative;
+    padding: 80px 0;
+    max-width: 100%;
 }
 
-#cta h3 {
+footer .footer-contain {
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-contain {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+ .footer-col {
+    width: 25%;
+    float: left;
+}
+
+.footer-col li {
+    margin: 0 15px 5px 0;
+}
+
+.footer-col a h5 {
+    color: #fff;
+    font: 900 1em;
+    text-align: left;
+    line-height: 1.7em;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+/*Call to Action*/
+
+.footer-form {
+    display: block;
+    position: relative;
+    float: right;
+    width: 35%;
+    text-align: left;
+    margin-bottom: 0px;
+    clear: none;
+}
+
+form {
+    display: block;
+    margin-top; 0em;
+}
+
+#signup h5 {
+    font: 900 14px/1em "brandon-grotesque",sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#form {
     display: block;
     margin: 0 auto 20px auto;
     width: 400px;
@@ -358,7 +438,7 @@ article h4 {
     padding: 0 0 20px 0;
 }
 
-.button-2 {
+/*.button-2 {
     display: block;
     margin: 0 auto;
     border: 2px solid #02b8dd;
@@ -373,32 +453,4 @@ article h4 {
 .button-2:hover {
     background-color: #02b8dd;
     color: #fff;
-}
-
-/*Footer*/
-
-footer {
-    padding: 60px 0;
-    background-color: #f8fafa;
-}
-
-#footer-info {
-    width: 380px;
-    float: left;
-    margin-top: 10px;
-}
-
-#footer-links {
-    width: 520px;
-    float: right;
-}
-
-#footer-links ul {
-    width: 150px;
-    float: left;
-    margin-left: 20px;
-}
-
-#footer-links ul li {
-    margin: 10px 0;
-}
+}*/
