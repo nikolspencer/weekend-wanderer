@@ -223,50 +223,35 @@ header nav ul li a {
 
 /*Explore Trips*/
 
-#explore {
+#container {
     margin: auto;
     width: 1190px;
     padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
-.explore-1 {
-    position: relative;
-    float: left;
-    margin: 60px 60px;
+.box {
+    display: block;
+    margin: 0px;
+    white-space: nowrap;
 }
 
-.explore-2 {
-    position: relative;
-    float: left;
-    margin: 60px 60px;
+.box div {
+  display: inline-block;
+  margin: 0px;
+  padding: 20px;
+  vertical-align: middle;
 }
 
-.explore-3 {
+.box p {
     position: relative;
-    float: left;
-    margin: 60px 60px;
-}
-
-.explore-4 {
-    position: relative;
-    float: left;
-    margin-top: 40px;
-    margin: 60px 60px;
-}
-
-.explore-5 {
-    position: relative;
-    float: left;
-    margin-top: 40px;
-    margin: 60px 60px;
-}
-
-.explore-6 {
-    position: relative;
-    float: left;
-    margin-top: 40px;
-    margin: 60px 60px;
+    width: 100%;
+    top: 12px;
+    z-index: 2;
+    text-align: center;
+    font-size: 1.5em;
+    left: 15px;
 }
 
 /*Build A Trip*/
