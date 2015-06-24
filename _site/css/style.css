@@ -355,6 +355,13 @@ header nav ul li a {
     margin-right: 30px;
 }
 
+#blog article:first-child {
+    margin-left: 15px;
+}
+
+#blog article:last-child {
+    margin: 0
+}
 #blog article .overlay {
     background: rgba(255, 255, 255, .95);
     height: 230px;
