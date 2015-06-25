@@ -103,6 +103,7 @@ header {
 }
 
 header h1 {
+    color: #fff;
     float: left;
     margin-top: 10px;
     padding-left: 30px;
@@ -127,7 +128,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #444;
+    color: #fff;
     text-transform: uppercase;
     font-weight: bold;
     display: block;
@@ -162,7 +163,7 @@ header nav ul li a {
 
 .button-sm {
     text-align: center;
-    background-color: #444;
+    background-color: #02b8dd;
     border-radius: 3px;
     color: #fff;
     width: auto;
@@ -174,20 +175,23 @@ header nav ul li a {
 }
 
 .button-sm:hover {
-    background-color: #02b8dd;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 /*Hero Image*/
 
 #hero-image {
     height: 590px;
     padding-top: 1px;
-    background: #e8eced url('../images/hero.jpg') no-repeat center;
+    background: #e8eced url('../images/camp-hero.jpg') no-repeat center;
 }
 
 #hero-image h2 {
+    color: #fff;
     margin: 180px 0 40px 0;
 }
+
+
 /* Let's Go Button needs a color */
 
 .button-header {
@@ -238,25 +242,35 @@ header nav ul li a {
 }
 
 .box {
-    display: block;
-    margin: 0px;
-    white-space: nowrap;
+    float: left;
+    position: relative;
+    display: inline-block;
 }
 
 .box div {
-    display: inline-block;
-    margin: 0px;
-    padding: 20px;
+    float:left;
+    padding: 5px;
     vertical-align: middle;
+}
+
+.box img {
+    max-width: 100%;
 }
 
 .box p {
     position: relative;
-    width: 100%;
-    top: 12px;
-    z-index: 2;
+    color: #fff;
+    padding: 3px;
     text-align: center;
-    font-size: 1.5em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: .2em;
+    bottom: 140px;   
+}
+
+.box br {
+    padding: -5px;
 }
 /* Browse All Button needs a color */
 
@@ -283,7 +297,7 @@ header nav ul li a {
 #build {
     height: 315px;
     padding-top: 1px;
-    background: #e8eced url('../images/hero.jpg') no-repeat center;
+    background: #e8eced url('../images/camp-hero.jpg') no-repeat center;
     background-color: #f8fafa;
     padding: 30px 0;
     text-align: left;
@@ -297,15 +311,6 @@ header nav ul li a {
     padding-top: 100px;
 }
 
-#build p {
-    font-size: 15px;
-    letter-spacing: .2em;
-    text-align: left;
-    /*    max-width: 40%; */
-    
-    margin-bottom: 55px;
-    line-height: 1.5em;
-}
 
 #build a img {
     margin: 20px 0;
@@ -362,6 +367,7 @@ header nav ul li a {
 #blog article:last-child {
     margin: 0
 }
+
 #blog article .overlay {
     background: rgba(255, 255, 255, .95);
     height: 230px;
