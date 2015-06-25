@@ -112,7 +112,38 @@ header h1 {
 header h1 .color {
     color: #02b8dd;
 }
+.search-nav {
+    background: transparent;
+    border-right: none;
+    float: left;
+}
 
+.search-nav form {
+    padding: 10px;
+    width: 500px;
+    margin:20px;
+}
+
+.search-box {
+    padding:8px 15px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border:0px solid #dbdbdb;
+}
+.search-button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #02bbdd;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color:#02bbdd;
+    color:#fafafa;
+}
+.search-button:hover  {
+    background-color:#fafafa;
+    color:#207cca;
+}
 header nav {
     background: transparent;
     border-right: none;
@@ -237,7 +268,6 @@ header nav ul li a {
     margin: auto;
     width: 1190px;
     padding-top: 40px;
-    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -260,11 +290,10 @@ header nav ul li a {
 .box p {
     position: relative;
     color: #fff;
-    padding: 3px;
     text-align: center;
     text-transform: uppercase;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: .2em;
     bottom: 140px;   
 }
@@ -305,12 +334,15 @@ header nav ul li a {
 
 #build h3 {
     display: block;
-    color: #242424;
+    color: #fff;
     text-align: left;
     padding: 0;
     padding-top: 100px;
 }
 
+ p {
+    color: #fff;
+}
 
 #build a img {
     margin: 20px 0;
