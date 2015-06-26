@@ -1,5 +1,6 @@
 /* Style Guide:
-font-family: 
+font-family:'Abril Fatface W01';
+font-family:'Brandon Grotesque W01';
 color1:
 color2:
 color3:
@@ -10,33 +11,37 @@ color4:
 body {
     background-color: #fff;
     color: #777;
-    font: normal 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font: normal 1em 'Brandon Grotesque W01', sans-serif;
 }
 
 p {
+    font-family: 'Brandon Grotesque W01', sans-serif;
     line-height: 1.2em;
     margin-bottom: 20px;
 }
 
 h1 {
-    font-family: 'Crete Round', serif;
-    font-weight: bold;
+    font-family: 'Abril Fatface W01', serif;
+    font-weight: bolder;
+    text-transform: uppercase;
     color: #444;
-    font-size: 3em;
+    font-size: 4em;
     margin-bottom: 20px;
 }
 
 h2 {
+    font-family: 'Abril Fatface W01', serif;
     font-weight: 300;
     color: #444;
     font-size: 2.7em;
     letter-spacing: .2em;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 h3 {
+    font-family: 'Brandon Grotesque W01', sans-serif;
     font-size: 2em;
     color: #444;
     font-weight: bold;
@@ -46,6 +51,7 @@ h3 {
 }
 
 h4 {
+    font-family: 'Abril Fatface W01', serif;
     font-size: 1.5em;
     color: #444;
     font-weight: bold;
@@ -54,6 +60,7 @@ h4 {
 }
 
 h5 {
+    font-family: 'Brandon Grotesque W01', sans-serif;
     text-align: left;
     letter-spacing: .2em;
     color: #FFF;
@@ -62,12 +69,14 @@ h5 {
 }
 
 h6 {
-    font: .8em;
+    font-family: 'Brandon Grotesque W01', sans-serif;
+    font-size: .8em;
     color: #ddd;
     margin-bottom: 10px;
 }
 
 a {
+    font-family: 'Brandon Grotesque W01', sans-serif;
     text-decoration: none;
     color: #444;
 }
@@ -84,6 +93,16 @@ small {
     font-size: .8em;
     color: #777;
     font-style: italic;
+}
+
+i {
+    font-style: italic;
+    text-transform: none;
+    line-height: inherit;
+}
+
+i .color {
+    color: #02b8dd;
 }
 
 .clear {
@@ -105,13 +124,20 @@ header {
 header h1 {
     color: #fff;
     float: left;
-    margin-top: 10px;
-    padding-left: 30px;
+    font-size: 1em;
+    margin: 10px 0 0 10px;
+    padding: 20px;
 }
 
 header h1 .color {
     color: #02b8dd;
 }
+
+.icon {
+    color: #fff;
+    padding: 3px;
+}
+
 .search-nav {
     background: transparent;
     border-right: none;
@@ -121,29 +147,19 @@ header h1 .color {
 .search-nav form {
     padding: 10px;
     width: 500px;
-    margin:20px;
+    margin: 20px;
 }
 
 .search-box {
-    padding:8px 15px;
-    border-bottom-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border:0px solid #dbdbdb;
+    background: transparent;
+    border: none;
 }
-.search-button {
-    position:relative;
-    padding:6px 15px;
-    left:-8px;
-    border:2px solid #02bbdd;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px;
-    background-color:#02bbdd;
-    color:#fafafa;
+
+input[type="text"] {
+    font-family: 'Brandon Grotesque W01', sans-serif;
+    color: #fff;
 }
-.search-button:hover  {
-    background-color:#fafafa;
-    color:#207cca;
-}
+
 header nav {
     background: transparent;
     border-right: none;
@@ -161,7 +177,6 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
     display: block;
     margin-right: 20px;
 }
@@ -221,8 +236,6 @@ header nav ul li a {
     color: #fff;
     margin: 180px 0 40px 0;
 }
-
-
 /* Let's Go Button needs a color */
 
 .button-header {
@@ -278,7 +291,7 @@ header nav ul li a {
 }
 
 .box div {
-    float:left;
+    float: left;
     padding: 5px;
     vertical-align: middle;
 }
@@ -295,7 +308,7 @@ header nav ul li a {
     font-size: 1em;
     font-weight: bolder;
     letter-spacing: .2em;
-    bottom: 140px;   
+    bottom: 140px;
 }
 
 .box br {
@@ -326,7 +339,7 @@ header nav ul li a {
 #build {
     height: 315px;
     padding-top: 1px;
-    background: #e8eced url('../images/camp-hero.jpg') no-repeat center;
+    background: #e8eced url('../images/adventure.jpg') no-repeat center;
     background-color: #f8fafa;
     padding: 30px 0;
     text-align: left;
@@ -340,7 +353,7 @@ header nav ul li a {
     padding-top: 100px;
 }
 
- p {
+p {
     color: #fff;
 }
 
@@ -481,7 +494,7 @@ input[type="email"] {
     background: none;
     border: 1px solid #ddd;
     margin-bottom: 10px;
-    color: #000;
+    color: #fff;
 }
 
 input:focus {
@@ -543,7 +556,7 @@ input:focus {
     height: 70px;
     color: #616161;
     text-transform: uppercase;
-    font: .8em "brandon-grotesque", sans-serif;
+    font: .8em "Roboto", sans-serif;
 }
 
 .signoff-contain {
