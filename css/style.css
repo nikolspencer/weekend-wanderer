@@ -1,108 +1,82 @@
-/* Style Guide:
+/** style.css for www.weekendwander.com 8th Light challenge project
+
+branding guide:
 font-family:'Abril Fatface W01';
 font-family:'Brandon Grotesque W01';
-color1:
-color2:
-color3:
-color4:
+color1:#392033
+color2:#ffe577
+color3:#ff866
+color4:#fd6051
+**/
+
+/*
+	CSS Reset by Eric Meyer - Released under Public Domain
+    http://meyerweb.com/eric/tools/css/reset/
 */
-/*Basics*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
 body {
-    background-color: #fff;
-    color: #777;
-    font: normal 1em 'Brandon Grotesque W01', sans-serif;
+	line-height: 1;
 }
 
-p {
-    font-family: 'Brandon Grotesque W01', sans-serif;
-    line-height: 1.2em;
-    margin-bottom: 20px;
+ol, ul {
+	list-style: none;
 }
 
-h1 {
-    font-family: 'Abril Fatface W01', serif;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: #444;
-    font-size: 4em;
-    margin-bottom: 20px;
+blockquote, q {
+	quotes: none;
 }
 
-h2 {
-    font-family: 'Abril Fatface W01', serif;
-    font-weight: 300;
-    color: #444;
-    font-size: 2.7em;
-    letter-spacing: .2em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 
-h3 {
-    font-family: 'Brandon Grotesque W01', sans-serif;
-    font-size: 2em;
-    color: #444;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-h4 {
-    font-family: 'Abril Fatface W01', serif;
-    font-size: 1.5em;
-    color: #444;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
+/* end Reset Style */
 
-h5 {
-    font-family: 'Brandon Grotesque W01', sans-serif;
-    text-align: left;
-    letter-spacing: .2em;
-    color: #FFF;
-    text-transform: uppercase;
-    padding-left: 5px;
-}
+/*------------------------------------------
+Universal Styles & Behavior 
+-------------------------------------------*/
 
-h6 {
-    font-family: 'Brandon Grotesque W01', sans-serif;
-    font-size: .8em;
-    color: #ddd;
-    margin-bottom: 10px;
-}
-
-a {
-    font-family: 'Brandon Grotesque W01', sans-serif;
-    text-decoration: none;
-    color: #444;
-}
-
-a:hover {
-    color: #02b8dd;
-}
-
-strong {
-    font-weight: bold;
-}
-
-small {
-    font-size: .8em;
-    color: #777;
-    font-style: italic;
-}
-
-i {
-    font-style: italic;
-    text-transform: none;
-    line-height: inherit;
-}
-
-i .color {
-    color: #02b8dd;
+* {
+	box-sizing: border-box;
+	*behavior: url(boxsizing.htc);
 }
 
 .clear {
@@ -114,28 +88,180 @@ i .color {
     padding: 0 10px;
     width: 1190px;
 }
-/*Header*/
+
+body {
+    font-family: 'Brandon Grotesque W01', Arial, serif; 
+    font-size: 100%; 
+    color: #777; 
+    background-color: #ff; 
+    margin: 0 auto; 
+}
+
+img {
+    max-width: 100%;
+}
+
+/*------------------------------------------
+Universal Typography
+-------------------------------------------*/
+
+h1, h2 { 
+    color: #fff;
+    font-size: 2.3em; 
+    font-family: 'Abril Fatface W01', serif;
+    font-weight: bold;
+    letter-spacing: .2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+
+h2 em {
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+h3, h4, h5 {
+    font-size: 100%;
+    font-family: 'Brandon Grotesque W01', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin-bottom: 20px;
+}
+
+h3, h4 {
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+}
+
+h5 {
+    color: #fff;
+    letter-spacing: .1em;
+    text-align: left;
+    padding-left: 5px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: 'Brandon Grotesque W01', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin-top: 30px;
+    color: #a5a5a5;
+}
+
+p {
+    font-size: 100%;
+    font-family: 'Brandon Grotesque W01', sans-serif;
+    line-height: 1.2em;
+    color: #fff;
+}
+
+a {
+    font-family: 'Brandon Grotesque W01', Arial, serif; 
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #444;
+}
+
+a:hover {
+    color: #11a190;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+small {
+    font-size: .8em;
+    color: #a5a5a5;
+    font-style: italic;
+}
+
+input[type="text"] {
+    width: 50%;
+    font-size: .8em;
+    padding-left: 5px;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+    color: #fff;
+}  
+
+/*------------------------------------------
+Universal Embelishments 
+-------------------------------------------*/
+.icon {
+    color: #fff;
+    padding: 3px;
+}
+
+.icon-lg {
+    color: #777;
+    padding: 4px;
+    margin: 20px 10px 20px 5px;
+}
+
+.btn {
+    border-style: none;
+    background: #fa7b7f;;
+    color: #fff;
+    padding: 9px 27px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 300;
+    line-height: 1.43em;
+    letter-spacing: .2em;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #d56a6d;
+}
+
+.btn-semitrans {
+    background: rgba(255,255,255,0.5);
+    border-style: none;
+    margin: 20px 44.5%;
+    color: #fff;
+}
+
+.btn-semitrans:hover {
+    color: #fff;
+    background: #11a190;
+}
+
+.btn-lg {
+    margin: 0 41%;
+    margin-bottom: 60px;
+    padding: 9px 55px
+}
+
+/*------------------------------------------
+Header: Navigation & Hero 
+-------------------------------------------*/
 
 header {
     height: 600px;
     max-width: 100%;
 }
 
-header h1 {
-    color: #fff;
+/* REMOVE when logo is added */
+header p {
     float: left;
+    background: transparent;
     font-size: 1em;
-    margin: 10px 0 0 10px;
+    margin: 10px 40px 10px 20px;
     padding: 20px;
-}
-
-header h1 .color {
-    color: #02b8dd;
-}
-
-.icon {
-    color: #fff;
-    padding: 3px;
 }
 
 .search-nav {
@@ -150,17 +276,8 @@ header h1 .color {
     margin: 20px;
 }
 
-.search-box {
-    background: transparent;
-    border: none;
-}
-
-input[type="text"] {
-    font-family: 'Brandon Grotesque W01', sans-serif;
-    color: #fff;
-}
-
 header nav {
+    width: 100%;
     background: transparent;
     border-right: none;
     height: 50px;
@@ -174,57 +291,23 @@ header nav ul li {
     margin-top: 30px;
 }
 
-header nav ul li a {
+header nav a {
     color: #fff;
-    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: .34em;
     display: block;
     margin-right: 20px;
 }
 
-.header-wrapper {
-    max-width: 100%;
-}
-
-.main-nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
+.menu-nav {
+    float: right;
+    padding: 0 5px;
     display: inline-block;
     position: relative;
-    font-size: 14px;
-    letter-spacing: .34em;
     z-index: 4;
-    margin-right: -20px;
 }
 
-.user-login {
-    display: inline-block;
-    height: inherit;
-    vertical-align: top;
-    position: relative;
-    line-height: 60px;
-    padding: 8px 20px;
-}
-
-.button-sm {
-    text-align: center;
-    background-color: #02b8dd;
-    border-radius: 3px;
-    color: #fff;
-    width: auto;
-    height: 20px;
-    font-size: 1em;
-    letter-spacing: .34em;
-    text-transform: uppercase;
-    padding: 4px 15px;
-}
-
-.button-sm:hover {
-    background-color: #fff;
-    color: #000;
-}
-/*Hero Image*/
+/* Hero Image */
 
 #hero-image {
     height: 590px;
@@ -234,175 +317,164 @@ header nav ul li a {
 
 #hero-image h2 {
     color: #fff;
-    margin: 180px 0 40px 0;
-}
-/* Let's Go Button needs a color */
-
-.button-header {
-    display: block;
-    text-align: center;
-    background-color: #02b8dd;
-    border-radius: 3px;
-    color: #000;
-    width: 180px;
-    height: 50px;
-    font-size: 20px;
-    letter-spacing: .2em;
-    line-height: 50px;
-    margin: 0 auto;
-}
-
-.button-header:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.button-1 {
-    display: block;
-    text-align: center;
-    background: #444;
-    border-radius: 3px;
-    color: #fff;
-    width: 180px;
-    height: 50px;
-    font-size: 20px;
-    letter-spacing: .2em;
-    line-height: 50px;
-    margin: 0 auto;
-}
-
-.button-1:hover {
-    background-color: #02b8dd;
-    color: #fff;
-}
-/*Explore Trips*/
-
-#container {
-    margin: auto;
-    width: 1190px;
-    padding-top: 40px;
+    <!-- margin: 180px 0 40px 0; -->
     text-align: center;
 }
 
-.box {
+.h2-container {
+    margin: 225px auto 20px;
+}
+
+/*------------------------------------------
+Content: Explore, Build, Blog
+-------------------------------------------*/
+
+/* Explore Adventures */
+
+.explore {
+    padding-top: 60px;
+}
+
+.explore h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.explore .content {
+    padding-top: 30px;
+}
+
+.content {
+    max-width: 100%;
     float: left;
     position: relative;
     display: inline-block;
 }
 
-.box div {
+.content h6 {
+    text-align: center;
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    z-index: 2;
+}
+
+.finder div {
     float: left;
-    padding: 5px;
     vertical-align: middle;
 }
 
-.box img {
-    max-width: 100%;
+.explore .content .row {
+    margin: 0 -7.5px 40px -7.5px;
 }
 
-.box p {
+.explore .content .row>div {
+    padding: 7.5px;
+}
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    width: 25%;
+}
+
+.thumbnail {
+    height: 250px;
+    width: 100%;
     position: relative;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: bolder;
-    letter-spacing: .2em;
-    bottom: 140px;
+    display: table;
+    background-size: cover;
+    background-color: #777;
+    background-position: center;
 }
 
-.box br {
-    padding: -5px;
-}
-/* Browse All Button needs a color */
-
-.explore-button {
+.thumbnail:before {
+    content: " ";
     display: block;
-    text-align: center;
-    background-color: #02b8dd;
-    border-radius: 3px;
-    color: #000;
-    width: 180px;
-    height: 50px;
-    font-size: 20px;
-    letter-spacing: .2em;
-    line-height: 50px;
-    margin: 0 auto 40px;
+    position: absolute;
+    background: rgba(36,36,36,0.5);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
-.explore-button:hover {
-    background-color: #000;
-    color: #fff;
+.thumbnail p {
+    text-align: center;
+    padding: 5px 10px 20px;
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    font-style: normal;
+    z-index: 2;
 }
-/*Build A Trip*/
+
+.thumbnail a {
+    z-index: 3;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Build Adventure */
 
 #build {
     height: 315px;
-    padding-top: 1px;
+    width: 100%;
     background: #e8eced url('../images/adventure.jpg') no-repeat center;
     background-color: #f8fafa;
     padding: 30px 0;
-    text-align: left;
 }
 
 #build h3 {
-    display: block;
+    font: 700 24px "Brandon Grotesque W01", sans-serif;
+    letter-spacing: .34em;
     color: #fff;
     text-align: left;
-    padding: 0;
-    padding-top: 100px;
+    padding: 0; 
+    padding-top: 75px;
 }
 
-p {
-    color: #fff;
+#build p {
+    font: 400 16px "Brandon Grotesque W01", sans-serif;
+    letter-spacing: .4em;
+    max-width: 40%;
+    line-height: 1.6em;   
 }
 
-#build a img {
-    margin: 20px 0;
-}
-/* Dream Weekend Button needs a color */
-
-.build-button {
-    float: left;
-    text-align: center;
-    background-color: #02b8dd;
-    border-radius: 3px;
-    color: #000;
-    width: 250px;
-    height: 40px;
-    font-size: 20px;
-    letter-spacing: .2em;
-    line-height: 40px;
-    margin-bottom: 40px;
+#build .btn {
+    margin-top: 30px;
 }
 
-.build-button:hover {
-    background-color: #000;
-    color: #fff;
-}
-/*Blog Content*/
+/* Blog Content */
 
 #blog {
     display: block;
     padding: 60px 20px;
     text-align: center;
-}
-
-.blog-contain {
     margin: 0 auto;
 }
 
-#blog .blog-contain {
-    padding: 0 15px;
-    position: relative;
-    overflow: hidden;
-}
-
 #blog article {
-    width: 31%;
+    width: 30%;
     height: 100%;
     float: left;
     margin-right: 30px;
+    margin-bottom: 60px;
 }
 
 #blog article:first-child {
@@ -421,40 +493,47 @@ p {
 }
 
 article h4 {
-    border-bottom: 1px solid #02b8dd;
+    font-family: 'Abril Fatface W01';
+    font-size: 18px;
+    color: #444;
+    letter-spacing: .2em;
+    border-bottom: 1px solid #11a190;
     padding-bottom: 20px;
 }
 
 .more-link {
-    border: 1px solid #02b8dd;
-    color: #02b8dd;
+    border: 1px solid #11a190;
+    color: #11a190;
     padding: 6px 20px;
     border-radius: 3px;
 }
 
 .more-link:hover {
-    background-color: #02b8dd;
+    background-color: #11a190;
     color: #fff;
 }
-/*Footer*/
+
+#blog p {
+    margin-bottom: 20px;
+}
+
+/*------------------------------------------
+Footer
+-------------------------------------------*/
 
 footer {
-    display: block;
-    background: #1f1f1f;
-    overflow: hidden;
-    position: relative;
+    background: #444;
     padding-top: 80px;
     max-width: 100%;
 }
 
-footer .footer-contain {
-    padding: 0 15px;
-    position: relative;
+footer .footer-menu {
+      padding: 0 15px;
     overflow: hidden;
 }
 
-.footer-contain {
-    max-width: 1120px;
+.footer-menu {
+    max-width: 1190px;
     margin: 0 auto;
 }
 
@@ -463,20 +542,18 @@ footer .footer-contain {
     float: left;
 }
 
-.footer-col li {
-    margin: 0 15px 5px 0;
-}
-
 .footer-col a h5 {
     color: #fff;
-    font: 900 1em;
+    font-size: 14px;
     text-align: left;
-    line-height: 1.7em;
+    line-height: 1.3em;
     letter-spacing: .3em;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 0;
 }
-/*Call to Action*/
+
+/* Call to Action */
 
 .cta-wrapper {
     width: 34%;
@@ -484,12 +561,16 @@ footer .footer-contain {
 }
 
 .form {
-    width: 98%;
+    max-width: 100%;
 }
 
-input[type="text"],
+.form .btn {
+    margin-left: 5px;
+}
+
 input[type="email"] {
-    width: 98%;
+    width: 100%;
+    font-size: 14px;
     padding: 15px 0px 15px 8px;
     background: none;
     border: 1px solid #ddd;
@@ -497,127 +578,58 @@ input[type="email"] {
     color: #fff;
 }
 
-input:focus {
-    box-shadow: inset 4px 6px 10px -4px rgba(0, 0, 0, 0.7), 0 1px 1px -1px rgba(255, 255, 255, 0.3);
-    background: rgba(0, 0, 0, 0.3);
-    @include easeme;
-}
-
-.cta-button {
-    float: left;
-    text-align: center;
-    background-color: #02b8dd;
-    border-radius: 3px;
-    color: #000;
-    width: 45%;
-    height: 30px;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: .3em;
-    line-height: 30px;
-    margin: 5px;
-}
-
-.cta-button:hover {
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
-}
-
 .name,
 .email {
     font-size: .8em;
-    color: #ddd;
+    color: #a5a5a5;
     margin: 5px;
 }
 
-.name-help,
-.email-help {
-    display: none;
-    padding: 0px;
-    margin: 0px 0px 15px 0px;
-}
 
 .small {
     float: right;
+    font-weight: 300;
     text-align: left;
-    font-size: .7em;
-    letter-spacing: .1em;
+    font-size: 11px;
+    letter-spacing: .2em;
     color: #fff;
     width: 36.5%;
-    padding: 10px 10px 70px 0;
+    padding: 10px 0 70px 0;
 }
+
 /*  Signoff */
 
 .signoff {
-    background: #121212;
+    background: #333;
     position: relative;
     overflow: hidden;
     height: 70px;
-    color: #616161;
+    color: #a5a5a5;
     text-transform: uppercase;
     font: .8em "Roboto", sans-serif;
 }
 
 .signoff-contain {
-    padding: 0 15px;
-    position: relative;
-    overflow: hidden;
-}
-
-.signoff-contain {
-    max-width: 1120px;
+    max-width: 1190px;
     margin: 0 auto;
 }
 
 .signoff ul {
     float: left;
-    height: 70px;
-    padding-top: 30px;
-}
-
-.signoff ul li:first-child {
-    padding-left: 0px;
-    border-left: 0px;
-}
-
-.signoff ul li:last-child {
-    margin-right: 0px;
-    font-size: .8em;
 }
 
 .signoff ul li {
     display: inline-block;
     margin-right: 50px;
-    height: 30px;
-    position: relative;
-    overflow: hidden;
-    vertical-align: top;
 }
 
 .signoff ul li a {
     color: inherit;
     font-size: .8em;
+    line-height: 70px;
     letter-spacing: .1em;
-    text-decoration: none;
-    display: inline-block;
-    height: 10px;
     vertical-align: top;
     font-weight: 900;
-}
-
-#footer-follow-us {
-    font-weight: 900;
-    overflow: visible;
-}
-
-#footer-follow-us a {
-    height: auto;
-}
-
-#footer-follow-us a.social-icon {
-    margin-right: 10px;
-    margin-top: -4px;
 }
 
 footer .signoff p {
