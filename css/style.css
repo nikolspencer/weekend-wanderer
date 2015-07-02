@@ -467,9 +467,9 @@ Content: Explore, Build, Blog
 
 #build p {
     font: 400 16px "Brandon Grotesque W01", sans-serif;
-    letter-spacing: .4em;
-    max-width: 65%;
-    line-height: 1.6em;   
+    letter-spacing: .2em;
+    max-width: 60%;
+    line-height: 1.3em;   
 }
 
 #build .btn {
