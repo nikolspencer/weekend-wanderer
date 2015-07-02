@@ -263,7 +263,6 @@ header {
     max-width: 100%;
 }
 
-/* REMOVE when logo is added */
 header p {
     float: left;
     background: transparent;
@@ -321,11 +320,11 @@ header nav a {
     height: 590px;
     padding-top: 1px;
     background: #e8eced url('../images/camp-hero.jpg') no-repeat center;
+    background-size: cover;
 }
 
 #hero-image h2 {
     color: #fff;
-    <!-- margin: 180px 0 40px 0; -->
     text-align: center;
 }
 
@@ -469,7 +468,7 @@ Content: Explore, Build, Blog
 #build p {
     font: 400 16px "Brandon Grotesque W01", sans-serif;
     letter-spacing: .4em;
-    max-width: 40%;
+    max-width: 65%;
     line-height: 1.6em;   
 }
 
@@ -545,7 +544,7 @@ footer {
 }
 
 footer .footer-menu {
-      padding: 0 15px;
+    padding: 0 15px;
     overflow: hidden;
 }
 
@@ -658,6 +657,3 @@ footer .signoff p {
     line-height: 70px;
 }
 
-/*------------------------------------------
-Mobile - for Restive.JS
--------------------------------------------*/
