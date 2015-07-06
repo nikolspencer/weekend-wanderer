@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>About</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/vendor/animate.css">
+    <link rel="stylesheet" href="/css/vendor/responsive-nav.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+
+    <link rel="canonical" href="http://yourdomain.com/about/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+<div class="content-wrap--padded">
+  <a class="site-title" href="/">Weekend Feedback</a>
+  <a class="nav-toggle"><img src="/images/menu.svg" alt="Menu" /></a>
+</div>
+  <nav class="hidden">
+  <div class="content-wrap">
+    <ul class="list__plain">
+      <li><a href="/">Home</a></li>
+      <li><a href="/grid/">Grid</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  </nav>
+</header>
+
+<script>
+  $(document).ready( function() {
+    $(".nav-toggle").click( function() {
+      var navigation = $("nav");
+
+      if (navigation.hasClass("visible")) {
+        navigation.removeClass("visible").addClass("hidden");
+        } else {
+        navigation.removeClass("hidden").addClass("visible");
+      }
+
+    });
+  });
+</script>
+
+
+    <div class="content-wrap--padded animated fadeIn">
+      <h2>About</h2>
+
+    </div>
+
+
+  </body>
+  <footer>
+<div class="content-wrap">
+  <p>&copy;2015 | Weekend Feedback</p>
+</div>
+</footer>
+
+
+</html>

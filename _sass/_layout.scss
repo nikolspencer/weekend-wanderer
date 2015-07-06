@@ -1,0 +1,75 @@
+.row {
+  overflow: hidden;
+  width: 100%;
+}
+
+[class*="block__"] {
+  float: left;
+  margin-bottom: 10px;
+  padding: 10px;
+  -webkit-transition: width 0.25s ease-in;
+  width: 100%;
+}
+
+@include media-query($medium) {
+  [class*="m--sixth"] { width: 16.66667%; }
+  [class*="m--fifth"] { width: 20%; }
+  [class*="m--fourth"] { width: 25%; }
+  [class*="m--third"] { width: 33.333%; }
+  [class*="m--half"] { width: 50%; }
+  [class*="m--two-thirds"] { width: 66.666%; }
+}
+
+@include media-query($large) {
+  [class*="l--sixth"] { width: 16.66667%; }
+  [class*="l--fifth"] { width: 20%; }
+  [class*="l--fourth"] { width: 25%; }
+  [class*="l--third"] { width: 33.333%; }
+  [class*="l--half"] { width: 50%; }
+  [class*="l--two-thirds"] { width: 66.666%; }
+}
+
+.grid__container {
+  overflow: hidden;
+}
+
+
+.example {
+  text-align: center;
+
+  [class*="block__"] {
+    background: $grey-light;
+  }
+  @include media-query($medium) {
+    [class*="block__"] {
+      border: 1px solid $white;
+      background: $blue-navy;
+      color: $white;
+    }
+  }
+  @include media-query($large) {
+    [class*="block__"] {
+      background: $red;
+    }
+  }
+}
+
+// ------------------------------------------ Wrapper
+
+[class*="content-wrap--padded"] {
+  padding: 10px;
+}
+@include media-query($medium) {
+  [class*="content-wrap"] {
+    font-size: 110%;
+  }
+}
+
+@include media-query($large) {
+  [class*="content-wrap"] {
+    font-size: 135%;
+    margin: 0 auto;
+    max-width: $large;
+  }
+}
+

@@ -1,0 +1,66 @@
+
+// ------------------------------------------ Header
+header {
+  padding: 10px 0 12px 0;
+}
+
+.nav-toggle {
+  float: right;
+  margin-right: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+// ------------------------------------------ Navigation
+nav {
+  background: $nav-background;
+  overflow: hidden;
+  @include transition(height 0.3s);
+
+  &.hidden { height: 0; }
+  &.visible { height: auto; }
+
+  @include media-query($small) {
+    &.visible { height: 220px; }
+  }
+
+  ul {
+    padding: 10px;
+    li a {
+      color: white;
+      border-bottom: 1px solid $white;
+      display: block;
+      padding: 10px 0;
+      &:hover {
+        color: #DDD;
+      }
+    }
+    li:last-child a {
+      border-bottom: none;
+    }
+  }
+
+  // ------------------------------------------ Desktop Navigation
+  @include media-query($small) {
+    ul li a {
+      border: none;
+      float: left;
+      text-align: center;
+      margin-top: 20px;
+      padding: 60px 0;
+      width: $nav-item-width;
+    }
+  }
+}
+
+
+// ------------------------------------------ Footer
+footer {
+  border-top: 1px solid $hairline;
+  font-size: $small-font-size;
+  margin-top: 2em;
+  text-align: center;
+}
+
