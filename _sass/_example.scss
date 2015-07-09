@@ -1,0 +1,88 @@
+/*
+  In our example, we code our default styling to the mobile screen. This keeps things simple by using the larger breakpoints to simply adjust the layout to better fill screen realestate.
+
+  We don't want to use 'iPhone/Tablet/Desktop' as our breakpoint targets because these aren't the only devices out there. The content will tell you when it needs to be adjusted. Style for mobile then open your browser window up to the point where it looks goofy or the layout looks wrong. Thats your first breakpoint. Repeat as necessary. I usually use a small/medium/large approach.
+
+*/
+
+$medium: 600px;
+$large: 1000px;
+
+$blue: #3366cc;
+
+
+// ----------------------------------------- First Example
+/* Default (small) styling */
+.responsive {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Middle Breakpoint */
+@media screen and (min-width: $medium) {
+  .responsive {
+    background: $red;
+    color: $white;
+    font-size: 1.25em;
+  }
+}
+
+/* Large breakpoint */
+@media screen and (min-width: $large) {
+  .responsive {
+    background: $blue;
+    color: $white;
+    font-size: 1.5em;
+  }
+}
+
+
+// ----------------------------------------- Second Example
+.example-two {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  padding: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: $medium) {
+  .example-two {
+    float: left;
+    margin: 20px 1%;
+    width: 48%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------- Content
+#example:after {
+  content: "This is mobile";
+}
+
+.example-two:after {
+  content: "On mobile, full width";
+}
+
+@media screen and (min-width: $medium) {
+  #example:after {
+    content: "This is medium";
+  }
+  .example-two:after {
+    content: "On medium, half width";
+  }
+}
+
+@media screen and (min-width: $large) {
+  #example:after {
+    content: "This is large";
+  }
+}
