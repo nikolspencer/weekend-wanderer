@@ -11,18 +11,17 @@ $large: 1000px;
 $blue: #3366cc;
 
 
-// ----------------------------------------- First Example
+
+// ----------------------------------------- Hero
 /* Default (small) styling */
 .responsive {
-  border: 1px solid #ccc;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
 /* Middle Breakpoint */
 @media screen and (min-width: $medium) {
   .responsive {
-    background: $red;
     color: $white;
     font-size: 1.25em;
   }
@@ -31,40 +30,66 @@ $blue: #3366cc;
 /* Large breakpoint */
 @media screen and (min-width: $large) {
   .responsive {
-    background: $blue;
     color: $white;
     font-size: 1.5em;
   }
 }
 
-
-// ----------------------------------------- Second Example
-.example-two {
-  border: 1px solid #ccc;
-  margin: 20px 0;
-  padding: 30px;
-  text-align: center;
+#hero {
+    background: url(/images/camp-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    top:50px;
 }
+
+// --------------------------------------- Explore
+.block__m--fourth {
+    border: 1px solid #444;
+    margin: 20px 0;
+    padding: 30px;
+    text-align: center;
+}
+
 
 @media screen and (min-width: $medium) {
-  .example-two {
-    float: left;
-    margin: 20px 1%;
-    width: 48%;
-  }
+    .block__m--fourth {
+        float: left;
+        margin: 20px 1%;
+        width: 23%;
+    }
+}
+
+// --------------------------------------- Build
+
+#build{
+    background: url(/images/build.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    top:50px;
+}
+
+// --------------------------------------- Blog
+.block__m--third {
+    border: 1px solid #444;
+    margin: 20px 0;
+    padding: 30px;
+    text-align: center;
 }
 
 
+@media screen and (min-width: $medium) {
+    .block__m--third {
+        float: left;
+        margin: 20px 1%;
+        width: 31.33%;
+    }
+}
 
 
-
-
-
-
-
-
-// ------------------------------------- Content
-#example:after {
+// --------------------------------------- Content
+#hero:after, #build:after {
   content: "This is mobile";
 }
 
@@ -73,7 +98,7 @@ $blue: #3366cc;
 }
 
 @media screen and (min-width: $medium) {
-  #example:after {
+  #hero:after, #build:after {
     content: "This is medium";
   }
   .example-two:after {
@@ -82,7 +107,7 @@ $blue: #3366cc;
 }
 
 @media screen and (min-width: $large) {
-  #example:after {
+  #hero:after, #build:after {
     content: "This is large";
   }
 }

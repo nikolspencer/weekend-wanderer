@@ -140,17 +140,36 @@ blockquote {
 .grid__container {
   overflow: hidden; }
 
-.example {
-  text-align: center; }
-  .example [class*="block__"] {
+#hero {
+  text-align: center;
+  /*
+    [class*="block__"] {
+      background: $grey-light;
+    }
+    @include media-query($medium) {
+      [class*="block__"] {
+        border: 1px solid $white;
+        background: $blue-navy;
+        color: $white;
+      }
+    }
+    @include media-query($large) {
+      [class*="block__"] {
+        background: $red;
+      }
+    } */ }
+
+#build {
+  text-align: left; }
+  #build [class*="block__"] {
     background: #e8e8e8; }
   @media screen and (min-width: 600px) {
-    .example [class*="block__"] {
+    #build [class*="block__"] {
       border: 1px solid #FFF;
       background: #3F576E;
       color: #FFF; } }
   @media screen and (min-width: 1000px) {
-    .example [class*="block__"] {
+    #build [class*="block__"] {
       background: #990000; } }
 
 [class*="content-wrap--padded"] {
@@ -163,7 +182,7 @@ blockquote {
   [class*="content-wrap"] {
     font-size: 135%;
     margin: 0 auto;
-    max-width: 1000px; } }
+    max-width: 100%; } }
 /*
   In our example, we code our default styling to the mobile screen. This keeps things simple by using the larger breakpoints to simply adjust the layout to better fill screen realestate.
 
@@ -172,47 +191,69 @@ blockquote {
 */
 /* Default (small) styling */
 .responsive {
-  border: 1px solid #ccc;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center; }
 
 /* Middle Breakpoint */
 @media screen and (min-width: 600px) {
   .responsive {
-    background: #990000;
     color: #FFF;
     font-size: 1.25em; } }
 /* Large breakpoint */
 @media screen and (min-width: 1000px) {
   .responsive {
-    background: #3366cc;
     color: #FFF;
     font-size: 1.5em; } }
-.example-two {
-  border: 1px solid #ccc;
+#hero {
+  background: url(/images/camp-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  top: 50px; }
+
+.block__m--fourth {
+  border: 1px solid #444;
   margin: 20px 0;
   padding: 30px;
   text-align: center; }
 
 @media screen and (min-width: 600px) {
-  .example-two {
+  .block__m--fourth {
     float: left;
     margin: 20px 1%;
-    width: 48%; } }
-#example:after {
+    width: 23%; } }
+#build {
+  background: url(/images/build.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  top: 50px; }
+
+.block__m--third {
+  border: 1px solid #444;
+  margin: 20px 0;
+  padding: 30px;
+  text-align: center; }
+
+@media screen and (min-width: 600px) {
+  .block__m--third {
+    float: left;
+    margin: 20px 1%;
+    width: 31.33%; } }
+#hero:after, #build:after {
   content: "This is mobile"; }
 
 .example-two:after {
   content: "On mobile, full width"; }
 
 @media screen and (min-width: 600px) {
-  #example:after {
+  #hero:after, #build:after {
     content: "This is medium"; }
 
   .example-two:after {
     content: "On medium, half width"; } }
 @media screen and (min-width: 1000px) {
-  #example:after {
+  #hero:after, #build:after {
     content: "This is large"; } }
 header {
   padding: 10px 0 12px 0; }
