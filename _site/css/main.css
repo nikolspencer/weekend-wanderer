@@ -14,9 +14,8 @@ body {
   padding: 0;
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl,
+figure,
 .highlight {
   margin-bottom: 15px; }
 
@@ -24,8 +23,12 @@ img {
   max-width: 100%;
   vertical-align: middle; }
 
-img.circular {
-  border-radius: 50%; }
+.thumbnail {
+  max-width: 100%;
+  height: 250px;
+  position: relative;
+  display: table;
+  background-size: cover; }
 
 figure {
   margin: 0; }
@@ -41,7 +44,12 @@ figcaption {
   list-style: none;
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000000;
   font-weight: 600; }
 
@@ -189,6 +197,20 @@ blockquote {
   We don't want to use 'iPhone/Tablet/Desktop' as our breakpoint targets because these aren't the only devices out there. The content will tell you when it needs to be adjusted. Style for mobile then open your browser window up to the point where it looks goofy or the layout looks wrong. Thats your first breakpoint. Repeat as necessary. I usually use a small/medium/large approach.
 
 */
+#hero {
+  background: url(/images/camp-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  top: 50px; }
+  #hero h1 {
+    padding-top: 5%;
+    font-size: 2em;
+    color: #FFF; }
+    #hero h1 em {
+      font-size: 0.1 0.5em;
+      font-style: italic; }
+
 /* Default (small) styling */
 .responsive {
   padding: 20px 0;
@@ -196,20 +218,28 @@ blockquote {
 
 /* Middle Breakpoint */
 @media screen and (min-width: 600px) {
-  .responsive {
+  #hero.responsive {
     color: #FFF;
     font-size: 1.25em; } }
 /* Large breakpoint */
 @media screen and (min-width: 1000px) {
-  .responsive {
+  #hero.responsive {
     color: #FFF;
     font-size: 1.5em; } }
-#hero {
-  background: url(/images/camp-hero.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-  top: 50px; }
+.explore h2 {
+  font-size: 2.8em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: .2em; }
+.explore h3 {
+  font-size: 2em;
+  font-style: italic;
+  color: #11a190;
+  text-align: center;
+  letter-spacing: .08em;
+  margin-top: -30px; }
 
 .block__m--fourth {
   border: 1px solid #444;
@@ -240,21 +270,30 @@ blockquote {
     float: left;
     margin: 20px 1%;
     width: 31.33%; } }
+/*// --------------------------------------- Content
 #hero:after, #build:after {
-  content: "This is mobile"; }
+  content: "This is mobile";
+}
 
 .example-two:after {
-  content: "On mobile, full width"; }
+  content: "On mobile, full width";
+}
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $medium) {
   #hero:after, #build:after {
-    content: "This is medium"; }
-
+    content: "This is medium";
+  }
   .example-two:after {
-    content: "On medium, half width"; } }
-@media screen and (min-width: 1000px) {
+    content: "On medium, half width";
+  }
+}
+
+@media screen and (min-width: $large) {
   #hero:after, #build:after {
-    content: "This is large"; } }
+    content: "This is large";
+  }
+}
+*/
 header {
   padding: 10px 0 12px 0; }
 

@@ -8,11 +8,30 @@
 $medium: 600px;
 $large: 1000px;
 
-$blue: #3366cc;
+$green: #11a190;
+$coral: #fa7b7f;
+$gray: #444;
 
 
 
 // ----------------------------------------- Hero
+
+#hero {
+    background: url(/images/camp-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    top:50px;
+    h1 {
+        padding-top: 5%;
+        font-size: 2em;
+        color: $white;
+        em {
+            font-size: .1.5em;
+            font-style: italic;
+        }
+    }
+}
 /* Default (small) styling */
 .responsive {
   padding: 20px 0;
@@ -21,7 +40,7 @@ $blue: #3366cc;
 
 /* Middle Breakpoint */
 @media screen and (min-width: $medium) {
-  .responsive {
+  #hero.responsive {
     color: $white;
     font-size: 1.25em;
   }
@@ -29,21 +48,36 @@ $blue: #3366cc;
 
 /* Large breakpoint */
 @media screen and (min-width: $large) {
-  .responsive {
+  #hero.responsive {
     color: $white;
     font-size: 1.5em;
   }
 }
 
-#hero {
-    background: url(/images/camp-hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    top:50px;
-}
+
 
 // --------------------------------------- Explore
+
+.explore {
+    h2 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: $gray;
+    letter-spacing: .2em;
+    }
+    h3 {
+    font-size: 2em;
+    font-style: italic;
+    color: $green;
+    text-align: center;
+    letter-spacing: .08em;
+    margin-top: -30px;
+    }
+    
+    
+}
 .block__m--fourth {
     border: 1px solid #444;
     margin: 20px 0;
@@ -88,7 +122,7 @@ $blue: #3366cc;
 }
 
 
-// --------------------------------------- Content
+/*// --------------------------------------- Content
 #hero:after, #build:after {
   content: "This is mobile";
 }
@@ -111,3 +145,4 @@ $blue: #3366cc;
     content: "This is large";
   }
 }
+*/

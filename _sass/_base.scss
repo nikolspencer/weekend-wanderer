@@ -1,141 +1,140 @@
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 // ---------------------------------------- Globals
 body {
-  -webkit-text-size-adjust: 100%;
-  background-color: $background-color;
-  color: $text-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: 300;
-  line-height: $base-line-height;
-  padding: 0;
-  margin: 0;
+    -webkit-text-size-adjust: 100%;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: 300;
+    line-height: $base-line-height;
+    padding: 0;
+    margin: 0;
 }
 
-
 // ---------------------------------------- Vertical rhythm
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,
+figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
 
+
 // ---------------------------------------- Images
 img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-img.circular {
-  border-radius: 50%;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
+.thumbnail {
+    max-width: 100%;
+    height: 250px;
+    position: relative;
+    display: table;
+    background-size: cover;
+}
 
 // ---------------------------------------- Figures
 figure {
-  margin: 0;
-  & > img {
-    display: block;
-    margin-bottom: 5px;
-  }
+    margin: 0;
+    & > img {
+        display: block;
+        margin-bottom: 5px;
+    }
 }
 
 figcaption {
-  color: $grey;
-  font-size: $small-font-size;
+    color: $grey;
+    font-size: $small-font-size;
 }
-
-
 
 // ---------------------------------------- Lists
 .list__plain {
-  list-style: none;
-  margin: 0;
+    list-style: none;
+    margin: 0;
 }
 
 // ----------------------------------------  Headings
-h1, h2, h3, h4, h5, h6 {
-  color: $black-absolute;
-  font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $black-absolute;
+    font-weight: 600;
 }
-
 
 // ---------------------------------------- Code
 code {
-  background: #ECF2FF;
-  padding: 4px 2px;
+    background: #ECF2FF;
+    padding: 4px 2px;
 }
 
 // -----------------------------------------  Links
 a {
-  color: $link-color;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
-
-  &:hover {
-    color: $link-hover;
-  }
+    color: $link-color;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        color: $link-hover;
+    }
 }
-
 
 // -----------------------------------------  Blockquote
 blockquote {
-  color: $grey;
-  border-left: 4px solid $grey-light;
-  padding-left: 10px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic;
-  margin-left: 10px;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
+    color: $grey;
+    border-left: 4px solid $grey-light;
+    padding-left: 10px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+    margin-left: 10px;
+    >:last-child {
+        margin-bottom: 0;
+    }
 }
-
-
 
 @include media-query($small) {
-  blockquote {
-    margin-left: 40px;
-  }
+    blockquote {
+        margin-left: 40px;
+    }
 }
-
 
 // ----------------------------------------- Divider
 .divider {
-  position: relative;
-  margin: 1.5em 0;
-  text-align: center;
-  p {
-    background: #fff;
-    color: $grey;
-    padding: 0 15px;
     position: relative;
-    display: inline-block;
-    margin: 0 auto;
-    z-index: 10;
-  }
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 17px;
-    border-top: 1px solid rgba(0,0,0,0.25);
-    width: 100%;
-  }
+    margin: 1.5em 0;
+    text-align: center;
+    p {
+        background: #fff;
+        color: $grey;
+        padding: 0 15px;
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+        z-index: 10;
+    }
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 17px;
+        border-top: 1px solid rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
 }
 
 // ----------------------------------------- Clearfix
 %clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
