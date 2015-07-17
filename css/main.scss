@@ -22,6 +22,10 @@ $brand-color:      $blue-navy;
 $grey:       #828282;
 $grey-light: lighten($grey, 40%);
 $grey-dark:  darken($grey, 25%);
+$green: #11a190;
+$coral: #fa7b7f;
+$gray: #444;
+
 
 
 $site-width: 1400px;
@@ -79,6 +83,7 @@ $large: 1000px;
 @import
   "base",
   "layout",
+  "elements",
   "example",
   "header_nav",
   "syntax-highlighting"

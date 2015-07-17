@@ -8,10 +8,6 @@
 $medium: 600px;
 $large: 1000px;
 
-$green: #11a190;
-$coral: #fa7b7f;
-$gray: #444;
-
 
 
 // ----------------------------------------- Hero
@@ -105,6 +101,9 @@ $gray: #444;
     padding-top: 48%;
     width: 48%;
     h2 {
+      font-size: 5vw;
+      margin: 0;
+      line-height: 0;
       top: 40%;
     }
   }
@@ -124,29 +123,64 @@ $gray: #444;
 
 // --------------------------------------- Build
 
-#build{
-    background: url(/images/build.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    top:50px;
+#build {
+  background: url(/images/build.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0 60px 0;
+  text-align: center;
+  h2 {
+    color: white;
+    text-transform: uppercase;
+  }
+}
+@media screen and (min-width: $medium) {
+  #build {
+    text-align: left;
+  }
 }
 
 // --------------------------------------- Blog
-.block__m--third {
-    border: 1px solid #444;
+.blog {
+  .category {
     margin: 20px 0;
-    padding: 30px;
-    text-align: center;
+    overflow: hidden;
+    position: relative;
+    .overlay {
+      background: rgba(255,255,255,0.75);
+      padding: 30px 20px;
+      line-height: 1em;
+      text-align: center;
+      h4 {
+        font-size: 2em;
+        margin-top: 0;
+      }
+    }
+  }
 }
 
+#wander { background-image: url('/images/blog.jpg'); }
+#tips { background-image: url('/images/tips.jpg'); }
+#deals { background-image: url('/images/deals.jpg'); }
 
 @media screen and (min-width: $medium) {
-    .block__m--third {
-        float: left;
-        margin: 20px 1%;
-        width: 31.33%;
+  .blog .category {
+    float: left;
+    margin: 10px;
+    min-height: 250px;
+    width: 30%;
+    .overlay {
+      h4 {
+        font-size: 1.25em;
+        line-height: 1.25em;
+      }
+      width: 40%;
+      height: 100%;
+
     }
+  }
 }
+
 
 
