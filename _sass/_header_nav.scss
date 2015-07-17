@@ -1,10 +1,32 @@
 
 // ------------------------------------------ Header
 header {
+  background: url(/images/camp-hero.jpg);
+  background-size: cover;
+  background-position: center;
   padding: 10px 0 12px 0;
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+  h1 {
+    color: white;
+    font-size: 5vh;
+    line-height: 1em;
+    padding: 3% 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: $medium) {
+  header {
+    min-height: 500px;
+  }
 }
 
 .nav-toggle {
+  color: white;
   float: right;
   margin-right: 10px;
   &:hover {

@@ -34,29 +34,9 @@
 }
 
 
-#hero {
-  text-align: center;
-/*
-  [class*="block__"] {
-    background: $grey-light;
-  }
-  @include media-query($medium) {
-    [class*="block__"] {
-      border: 1px solid $white;
-      background: $blue-navy;
-      color: $white;
-    }
-  }
-  @include media-query($large) {
-    [class*="block__"] {
-      background: $red;
-    }
-  } */
-}
-
 #build {
     text-align: left;
-    
+
     [class*="block__"] {
     background: $grey-light;
   }
@@ -71,13 +51,15 @@
     [class*="block__"] {
       background: $red;
     }
-  }  
+  }
 }
 
 // ------------------------------------------ Wrapper
 
 [class*="content-wrap--padded"] {
+  overflow: hidden;
   padding: 10px;
+  max-width: $site-width;
 }
 
 @include media-query($medium) {
@@ -90,7 +72,6 @@
   [class*="content-wrap"] {
     font-size: 135%;
     margin: 0 auto;
-    max-width: 100%;
   }
 }
 

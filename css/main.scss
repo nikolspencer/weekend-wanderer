@@ -24,11 +24,14 @@ $grey-light: lighten($grey, 40%);
 $grey-dark:  darken($grey, 25%);
 
 
+$site-width: 1400px;
+
+
 // ---------------------------------------- Header & Nav
 $number-of-nav-items: 4;
 $nav-item-width: (100%/$number-of-nav-items);
 
-$nav-background: $blue-navy;
+$nav-background: rgba(0,0,0,0.35);
 
 
 

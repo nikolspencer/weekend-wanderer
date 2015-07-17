@@ -50,7 +50,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000000;
+  color: black;
+  font-family: "alternate-gothic-no-1-d";
   font-weight: 600; }
 
 code {
@@ -148,40 +149,23 @@ blockquote {
 .grid__container {
   overflow: hidden; }
 
-#hero {
-  text-align: center;
-  /*
-    [class*="block__"] {
-      background: $grey-light;
-    }
-    @include media-query($medium) {
-      [class*="block__"] {
-        border: 1px solid $white;
-        background: $blue-navy;
-        color: $white;
-      }
-    }
-    @include media-query($large) {
-      [class*="block__"] {
-        background: $red;
-      }
-    } */ }
-
 #build {
   text-align: left; }
   #build [class*="block__"] {
     background: #e8e8e8; }
   @media screen and (min-width: 600px) {
     #build [class*="block__"] {
-      border: 1px solid #FFF;
-      background: #3F576E;
-      color: #FFF; } }
+      border: 1px solid white;
+      background: #3f576e;
+      color: white; } }
   @media screen and (min-width: 1000px) {
     #build [class*="block__"] {
       background: #990000; } }
 
 [class*="content-wrap--padded"] {
-  padding: 10px; }
+  overflow: hidden;
+  padding: 10px;
+  max-width: 1400px; }
 
 @media screen and (min-width: 600px) {
   [class*="content-wrap"] {
@@ -189,8 +173,7 @@ blockquote {
 @media screen and (min-width: 1000px) {
   [class*="content-wrap"] {
     font-size: 135%;
-    margin: 0 auto;
-    max-width: 100%; } }
+    margin: 0 auto; } }
 /*
   In our example, we code our default styling to the mobile screen. This keeps things simple by using the larger breakpoints to simply adjust the layout to better fill screen realestate.
 
@@ -198,18 +181,13 @@ blockquote {
 
 */
 #hero {
-  background: url(/images/camp-hero.jpg);
-  background-size: cover;
-  background-position: center;
   height: 500px;
   top: 50px; }
   #hero h1 {
-    padding-top: 5%;
-    font-size: 2em;
-    color: #FFF; }
-    #hero h1 em {
-      font-size: 0.1 0.5em;
-      font-style: italic; }
+    color: white;
+    font-size: 8vh;
+    line-height: 1em;
+    padding-top: 2%; }
 
 /* Default (small) styling */
 .responsive {
@@ -219,20 +197,19 @@ blockquote {
 /* Middle Breakpoint */
 @media screen and (min-width: 600px) {
   #hero.responsive {
-    color: #FFF;
+    color: white;
     font-size: 1.25em; } }
 /* Large breakpoint */
 @media screen and (min-width: 1000px) {
   #hero.responsive {
-    color: #FFF;
+    color: white;
     font-size: 1.5em; } }
 .explore h2 {
+  color: #444444;
   font-size: 2.8em;
-  text-transform: uppercase;
-  text-align: center;
   font-weight: bold;
-  color: #444;
-  letter-spacing: .2em; }
+  text-align: center;
+  text-transform: uppercase; }
 .explore h3 {
   font-size: 2em;
   font-style: italic;
@@ -241,17 +218,53 @@ blockquote {
   letter-spacing: .08em;
   margin-top: -30px; }
 
-.block__m--fourth {
-  border: 1px solid #444;
-  margin: 20px 0;
-  padding: 30px;
-  text-align: center; }
+.adventures {
+  padding: 10px; }
+  .adventures a {
+    background-size: cover;
+    background-position: 50%;
+    font-weight: bold;
+    display: block;
+    padding: 30px 0;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+    width: 100%; }
+    .adventures a h2 {
+      color: white;
+      font-size: 8vw;
+      position: absolute;
+      left: 0;
+      margin: 0;
+      right: 0;
+      top: 0; }
 
 @media screen and (min-width: 600px) {
-  .block__m--fourth {
+  .adventures a {
     float: left;
-    margin: 20px 1%;
-    width: 23%; } }
+    margin: 1%;
+    padding: 50px 0;
+    padding-top: 48%;
+    width: 48%; }
+    .adventures a h2 {
+      top: 40%; } }
+@media screen and (min-width: 600px) {
+  .adventures a {
+    width: 23%;
+    padding-top: 23%; } }
+#road {
+  background-image: url("/images/road_trip.jpg"); }
+
+#foods {
+  background-image: url("/images/food.jpg"); }
+
+#mountain {
+  background-image: url("/images/hike.jpg"); }
+
+#limits {
+  background-image: url("/images/rush.jpg"); }
+
 #build {
   background: url(/images/build.jpg);
   background-size: cover;
@@ -270,41 +283,34 @@ blockquote {
     float: left;
     margin: 20px 1%;
     width: 31.33%; } }
-/*// --------------------------------------- Content
-#hero:after, #build:after {
-  content: "This is mobile";
-}
-
-.example-two:after {
-  content: "On mobile, full width";
-}
-
-@media screen and (min-width: $medium) {
-  #hero:after, #build:after {
-    content: "This is medium";
-  }
-  .example-two:after {
-    content: "On medium, half width";
-  }
-}
-
-@media screen and (min-width: $large) {
-  #hero:after, #build:after {
-    content: "This is large";
-  }
-}
-*/
 header {
+  background: url(/images/camp-hero.jpg);
+  background-size: cover;
+  background-position: center;
   padding: 10px 0 12px 0; }
+  header a {
+    color: white; }
+    header a:hover {
+      color: white; }
+  header h1 {
+    color: white;
+    font-size: 5vh;
+    line-height: 1em;
+    padding: 3% 0;
+    text-align: center; }
 
+@media screen and (min-width: 600px) {
+  header {
+    min-height: 500px; } }
 .nav-toggle {
+  color: white;
   float: right;
   margin-right: 10px; }
   .nav-toggle:hover {
     cursor: pointer; }
 
 nav {
-  background: #3F576E;
+  background: rgba(0, 0, 0, 0.35);
   overflow: hidden;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
@@ -322,7 +328,7 @@ nav {
     padding: 10px; }
     nav ul li a {
       color: white;
-      border-bottom: 1px solid #FFF;
+      border-bottom: 1px solid white;
       display: block;
       padding: 10px 0; }
       nav ul li a:hover {
@@ -339,7 +345,7 @@ nav {
       width: 25%; } }
 
 footer {
-  border-top: 1px solid #DDDDDD;
+  border-top: 1px solid #dddddd;
   font-size: 14px;
   margin-top: 2em;
   text-align: center; }
@@ -374,32 +380,32 @@ footer {
     font-style: italic; }
   .highlight .gd {
     color: #000;
-    background-color: #fdd; }
+    background-color: #ffdddd; }
   .highlight .gd .x {
     color: #000;
-    background-color: #faa; }
+    background-color: #ffaaaa; }
   .highlight .ge {
     font-style: italic; }
   .highlight .gr {
-    color: #a00; }
+    color: #aa0000; }
   .highlight .gh {
-    color: #999; }
+    color: #999999; }
   .highlight .gi {
     color: #000;
-    background-color: #dfd; }
+    background-color: #ddffdd; }
   .highlight .gi .x {
     color: #000;
-    background-color: #afa; }
+    background-color: #aaffaa; }
   .highlight .go {
-    color: #888; }
+    color: #888888; }
   .highlight .gp {
-    color: #555; }
+    color: #555555; }
   .highlight .gs {
     font-weight: bold; }
   .highlight .gu {
-    color: #aaa; }
+    color: #aaaaaa; }
   .highlight .gt {
-    color: #a00; }
+    color: #aa0000; }
   .highlight .kc {
     font-weight: bold; }
   .highlight .kd {
@@ -412,20 +418,20 @@ footer {
     color: #458;
     font-weight: bold; }
   .highlight .m {
-    color: #099; }
+    color: #009999; }
   .highlight .s {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .na {
-    color: #008080; }
+    color: teal; }
   .highlight .nb {
-    color: #0086B3; }
+    color: #0086b3; }
   .highlight .nc {
     color: #458;
     font-weight: bold; }
   .highlight .no {
-    color: #008080; }
+    color: teal; }
   .highlight .ni {
-    color: #800080; }
+    color: purple; }
   .highlight .ne {
     color: #900;
     font-weight: bold; }
@@ -433,52 +439,52 @@ footer {
     color: #900;
     font-weight: bold; }
   .highlight .nn {
-    color: #555; }
+    color: #555555; }
   .highlight .nt {
-    color: #000080; }
+    color: navy; }
   .highlight .nv {
-    color: #008080; }
+    color: teal; }
   .highlight .ow {
     font-weight: bold; }
   .highlight .w {
-    color: #bbb; }
+    color: #bbbbbb; }
   .highlight .mf {
-    color: #099; }
+    color: #009999; }
   .highlight .mh {
-    color: #099; }
+    color: #009999; }
   .highlight .mi {
-    color: #099; }
+    color: #009999; }
   .highlight .mo {
-    color: #099; }
+    color: #009999; }
   .highlight .sb {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .sc {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .sd {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .s2 {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .se {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .sh {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .si {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .sx {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .sr {
     color: #009926; }
   .highlight .s1 {
-    color: #d14; }
+    color: #dd1144; }
   .highlight .ss {
     color: #990073; }
   .highlight .bp {
-    color: #999; }
+    color: #999999; }
   .highlight .vc {
-    color: #008080; }
+    color: teal; }
   .highlight .vg {
-    color: #008080; }
+    color: teal; }
   .highlight .vi {
-    color: #008080; }
+    color: teal; }
   .highlight .il {
-    color: #099; }
+    color: #009999; }

@@ -17,20 +17,14 @@ $gray: #444;
 // ----------------------------------------- Hero
 
 #hero {
-    background: url(/images/camp-hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    top:50px;
-    h1 {
-        padding-top: 5%;
-        font-size: 2em;
-        color: $white;
-        em {
-            font-size: .1.5em;
-            font-style: italic;
-        }
-    }
+  height: 500px;
+  top:50px;
+  h1 {
+    color: $white;
+    font-size: 8vh;
+    line-height: 1em;
+    padding-top: 2%;
+  }
 }
 /* Default (small) styling */
 .responsive {
@@ -59,40 +53,74 @@ $gray: #444;
 // --------------------------------------- Explore
 
 .explore {
-    h2 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
+  h2 {
     color: $gray;
-    letter-spacing: .2em;
-    }
-    h3 {
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  h3 {
     font-size: 2em;
     font-style: italic;
     color: $green;
     text-align: center;
     letter-spacing: .08em;
     margin-top: -30px;
-    }
-    
-    
-}
-.block__m--fourth {
-    border: 1px solid #444;
-    margin: 20px 0;
-    padding: 30px;
-    text-align: center;
+  }
 }
 
+
+.adventures {
+  padding: 10px;
+  a {
+    background-size: cover;
+    background-position: 50%;
+    font-weight: bold;
+    display: block;
+    padding: 30px 0;
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+    width: 100%;
+    h2 {
+      color: $white;
+      font-size: 8vw;
+      position: absolute;
+      left: 0;
+      margin: 0;
+      right: 0;
+      top: 0;
+
+    }
+  }
+}
 
 @media screen and (min-width: $medium) {
-    .block__m--fourth {
-        float: left;
-        margin: 20px 1%;
-        width: 23%;
+  .adventures a {
+    float: left;
+    margin: 1%;
+    padding: 50px 0;
+    padding-top: 48%;
+    width: 48%;
+    h2 {
+      top: 40%;
     }
+  }
 }
+@media screen and (min-width: $medium) {
+  .adventures a {
+    width: 23%;
+    padding-top: 23%;
+  }
+}
+
+#road { background-image: url('/images/road_trip.jpg'); }
+#foods { background-image: url('/images/food.jpg'); }
+#mountain { background-image: url('/images/hike.jpg'); }
+#limits { background-image: url('/images/rush.jpg'); }
+
 
 // --------------------------------------- Build
 
@@ -122,27 +150,3 @@ $gray: #444;
 }
 
 
-/*// --------------------------------------- Content
-#hero:after, #build:after {
-  content: "This is mobile";
-}
-
-.example-two:after {
-  content: "On mobile, full width";
-}
-
-@media screen and (min-width: $medium) {
-  #hero:after, #build:after {
-    content: "This is medium";
-  }
-  .example-two:after {
-    content: "On medium, half width";
-  }
-}
-
-@media screen and (min-width: $large) {
-  #hero:after, #build:after {
-    content: "This is large";
-  }
-}
-*/
