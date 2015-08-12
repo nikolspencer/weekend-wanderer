@@ -18,12 +18,22 @@ body {
 }
 
 // ---------------------------------------- Vertical rhythm
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,ul,ol,dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
 figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
-
 
 // ---------------------------------------- Images
 img {
@@ -60,15 +70,34 @@ figcaption {
 }
 
 // ----------------------------------------  Headings
-h1,
-h2,
+h1 {
+    color: $white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: $black-absolute;
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+    letter-spacing: .08em;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  color: $black-absolute;
-  font-family: "alternate-gothic-no-1-d";
-    font-weight: 600;
+    color: $black-absolute;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: .08em;
+}
+
+p {
+    color: $black-absolute;
+    font-family: 'Lora', serif;
+    font-weight: 400;
 }
 
 // ---------------------------------------- Code

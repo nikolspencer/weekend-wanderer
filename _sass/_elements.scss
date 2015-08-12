@@ -1,24 +1,22 @@
 [class*="button"] {
-  background: $coral;
-  color: white;
-  display: inline-block;
-  font-size: 0.75em;
-  padding: 12px 15px;
-  &:hover {
-    background: darken($coral, 5%);
+    background: $coral;
     color: white;
-  }
+    display: inline-block;
+    font-size: 1em;
+    letter-spacing: .05em;
+    padding: 12px 15px;
+    &:hover {
+        background: darken($coral, 5%);
+        color: white;
+    }
 }
-
 
 .button--inverted {
-  border: 1px solid $green;
-  background: none;
-  color: $green;
-  &:hover {
+    border: 1px solid $green;
     background: none;
-    border-color: darken($green, 5%);
-    color: darken($green, 5%);
-  }
+    color: $green;
+    &:hover {
+        background: $green;
+        color: white;
+    }
 }
-

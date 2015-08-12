@@ -1,32 +1,37 @@
 <header class="site-header">
-<div class="content-wrap--padded">
-  <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-  <a class="nav-toggle">☰</a>
-</div>
-  <nav class="hidden">
-  <div class="content-wrap">
-    <ul class="list__plain">
-      <li><a href="/">Home</a></li>
-      <li><a href="/grid/">Grid</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-  </nav>
-  <h1>This weekend I'd rather be...<br><em>camping under the stars.</em></h1>
+    <div class="content-wrap--padded">
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <a class="nav-toggle">☰</a>
+    </div>
+    <nav class="hidden">
+        <div class="content-wrap">
+            <ul class="list__plain">
+                <li><a href="/">Home</a>
+                </li>
+                <li><a href="/grid/">Grid</a>
+                </li>
+                <li><a href="#">Projects</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>This weekend I want to be...</h1>
+    <h2>camping under the stars.</h2>
 </header>
 
 <script>
-  $(document).ready( function() {
-    $(".nav-toggle").click( function() {
-      var navigation = $("nav");
+    $(document).ready(function () {
+        $(".nav-toggle").click(function () {
+            var navigation = $("nav");
 
-      if (navigation.hasClass("visible")) {
-        navigation.removeClass("visible").addClass("hidden");
-        } else {
-        navigation.removeClass("hidden").addClass("visible");
-      }
+            if (navigation.hasClass("visible")) {
+                navigation.removeClass("visible").addClass("hidden");
+            } else {
+                navigation.removeClass("hidden").addClass("visible");
+            }
 
+        });
     });
-  });
 </script>

@@ -14,7 +14,18 @@ body {
   padding: 0;
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
 figure,
 .highlight {
   margin-bottom: 15px; }
@@ -44,15 +55,31 @@ figcaption {
   list-style: none;
   margin: 0; }
 
-h1,
-h2,
+h1 {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: .1em;
+  text-transform: uppercase; }
+
+h2 {
+  color: #000000;
+  font-family: 'Rock Salt', cursive;
+  font-weight: 400;
+  letter-spacing: .08em; }
+
 h3,
 h4,
 h5,
 h6 {
   color: #000000;
-  font-family: "alternate-gothic-no-1-d";
-  font-weight: 600; }
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  letter-spacing: .08em; }
+
+p {
+  color: #000000;
+  font-family: 'Lora', serif;
+  font-weight: 400; }
 
 code {
   background: #ECF2FF;
@@ -178,7 +205,8 @@ blockquote {
   background: #fa7b7f;
   color: white;
   display: inline-block;
-  font-size: 0.75em;
+  font-size: 1em;
+  letter-spacing: .05em;
   padding: 12px 15px; }
   [class*="button"]:hover {
     background: #f96267;
@@ -189,9 +217,8 @@ blockquote {
   background: none;
   color: #11a190; }
   .button--inverted:hover {
-    background: none;
-    border-color: #0f8a7b;
-    color: #0f8a7b; }
+    background: #11a190;
+    color: white; }
 
 /*
   In our example, we code our default styling to the mobile screen. This keeps things simple by using the larger breakpoints to simply adjust the layout to better fill screen realestate.
@@ -199,64 +226,51 @@ blockquote {
   We don't want to use 'iPhone/Tablet/Desktop' as our breakpoint targets because these aren't the only devices out there. The content will tell you when it needs to be adjusted. Style for mobile then open your browser window up to the point where it looks goofy or the layout looks wrong. Thats your first breakpoint. Repeat as necessary. I usually use a small/medium/large approach.
 
 */
-#hero {
-  height: 500px;
-  top: 50px; }
-  #hero h1 {
-    color: #FFF;
-    font-size: 8vh;
-    line-height: 1em;
-    padding-top: 2%; }
+.site-header h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 4vw;
+  margin: 0 0 10%; }
 
-/* Default (small) styling */
-.responsive {
-  padding: 20px 0;
-  text-align: center; }
-
-/* Middle Breakpoint */
-@media screen and (min-width: 600px) {
-  #hero.responsive {
-    color: #FFF;
-    font-size: 1.25em; } }
-/* Large breakpoint */
-@media screen and (min-width: 1000px) {
-  #hero.responsive {
-    color: #FFF;
-    font-size: 1.5em; } }
 .explore h2 {
   color: #444;
-  font-size: 2.8em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase; }
+  font-size: .6em;
+  margin: 0 0 15px;
+  text-align: center; }
 .explore h3 {
-  font-size: 2em;
-  font-style: italic;
   color: #11a190;
-  text-align: center;
+  font-size: 1.5em;
   letter-spacing: .08em;
-  margin-top: -30px; }
+  margin: 30px 0 10px;
+  text-align: center; }
 
+@media screen and (min-width: 600px) {
+  .explore h2 {
+    font-size: 2vw; }
+  .explore h3 {
+    font-size: 4.5vw; } }
 .adventures {
   padding: 10px; }
   .adventures a {
     background-size: cover;
-    background-position: 50%;
-    font-weight: bold;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     display: block;
-    padding: 30px 0;
+    font-weight: bold;
     margin: 10px 0;
+    padding: 40px 30px;
     position: relative;
     text-align: center;
     text-shadow: 0px 0px 20px black;
     width: 100%; }
-    .adventures a h2 {
+    .adventures a h3 {
       color: #FFF;
-      font-size: 8vw;
-      position: absolute;
       left: 0;
       margin: 0;
+      padding: 25px;
+      position: absolute;
       right: 0;
+      text-transform: uppercase;
       top: 0; }
 
 @media screen and (min-width: 600px) {
@@ -264,17 +278,15 @@ blockquote {
     float: left;
     margin: 1%;
     padding: 50px 0;
-    padding-top: 48%;
-    width: 48%; }
-    .adventures a h2 {
-      font-size: 5vw;
+    padding-top: 19%;
+    width: 23%; }
+    .adventures a h3 {
+      font-size: 3vw;
       margin: 0;
-      line-height: 0;
-      top: 40%; } }
-@media screen and (min-width: 600px) {
-  .adventures a {
-    width: 23%;
-    padding-top: 23%; } }
+      top: 25%; } }
+@media screen and (min-width: 1000px) {
+  .adventures {
+    padding: 10px 40px; } }
 #road {
   background-image: url("/images/road_trip.jpg"); }
 
@@ -294,9 +306,13 @@ blockquote {
   color: white;
   padding: 40px 0 60px 0;
   text-align: center; }
-  #build h2 {
+  #build h3 {
     color: white;
+    font-size: 3vw;
+    line-height: 1em;
     text-transform: uppercase; }
+  #build p {
+    color: white; }
 
 @media screen and (min-width: 600px) {
   #build {
@@ -315,22 +331,29 @@ blockquote {
       margin-top: 0; }
 
 #wander {
-  background-image: url("/images/blog.jpg"); }
+  background-image: url("/images/blog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 #tips {
-  background-image: url("/images/tips.jpg"); }
+  background-image: url("/images/tips.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 #deals {
-  background-image: url("/images/deals.jpg"); }
+  background-image: url("/images/deals.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @media screen and (min-width: 600px) {
   .blog .category {
     float: left;
     margin: 10px;
     min-height: 250px;
+    max-height: 250px;
     width: 30%; }
     .blog .category .overlay {
-      width: 40%;
+      width: 60%;
       height: 100%; }
       .blog .category .overlay h4 {
         font-size: 1.25em;
@@ -341,22 +364,26 @@ header {
   background-position: center;
   padding: 10px 0 12px 0; }
   header a {
+    font-size: 1.6vw;
     color: white; }
     header a:hover {
       color: white; }
   header h1 {
-    color: white;
-    font-size: 5vh;
-    line-height: 1em;
-    padding: 3% 0;
+    font-size: 4vw;
+    letter-spacing: .08em;
+    padding: 3% 0 0;
     text-align: center; }
 
 @media screen and (min-width: 600px) {
+  header {
+    min-height: 300px; } }
+@media screen and (min-width: 1000px) {
   header {
     min-height: 500px; } }
 .nav-toggle {
   color: white;
   float: right;
+  font-size: 2.5vh;
   margin-right: 10px; }
   .nav-toggle:hover {
     cursor: pointer; }
@@ -372,10 +399,10 @@ nav {
   nav.hidden {
     height: 0; }
   nav.visible {
-    height: auto; }
+    height: 200px; }
   @media screen and (min-width: 600px) {
     nav.visible {
-      height: 220px; } }
+      height: 100px; } }
   nav ul {
     padding: 10px; }
     nav ul li a {
@@ -393,7 +420,6 @@ nav {
       float: left;
       text-align: center;
       margin-top: 20px;
-      padding: 60px 0;
       width: 25%; } }
 
 footer {
