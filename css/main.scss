@@ -19,7 +19,7 @@ $text-color:       $black;
 $background-color: #fdfdfd;
 $brand-color:      $blue-navy;
 
-$grey:       #828282;
+$grey:       #444;
 $grey-light: lighten($grey, 40%);
 $grey-dark:  darken($grey, 25%);
 $green: #11a190;
@@ -86,5 +86,6 @@ $large: 1000px;
   "elements",
   "example",
   "header_nav",
-  "syntax-highlighting"
+  "syntax-highlighting",
+  "footer"
 ;

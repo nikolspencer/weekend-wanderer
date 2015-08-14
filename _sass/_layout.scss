@@ -33,27 +33,6 @@
   overflow: hidden;
 }
 
-
-#build {
-    text-align: left;
-
-    [class*="block__"] {
-    background: $grey-light;
-  }
-  @include media-query($medium) {
-    [class*="block__"] {
-      border: 1px solid $white;
-      background: $blue-navy;
-      color: $white;
-    }
-  }
-  @include media-query($large) {
-    [class*="block__"] {
-      background: $red;
-    }
-  }
-}
-
 // ------------------------------------------ Wrapper
 
 [class*="content-wrap--padded"] {
@@ -70,7 +49,7 @@
 
 @include media-query($large) {
   [class*="content-wrap"] {
-    font-size: 135%;
+    font-size: 120%;
     margin: 0 auto;
   }
 }

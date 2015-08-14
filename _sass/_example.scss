@@ -8,12 +8,7 @@
 $medium: 600px;
 $large: 1000px;
 // ----------------------------------------- Hero
-.site-header h2 {
-    color: $white;
-    text-align: center;
-    font-size: 4vw;
-    margin: 0 0 10%;
-}
+
 // --------------------------------------- Explore
 .explore {
     h2 {
@@ -24,7 +19,7 @@ $large: 1000px;
     }
     h3 {
         color: $green;
-        font-size: 1.5em;
+        font-size: 5vw;
         letter-spacing: .08em;
         margin: 30px 0 10px;
         text-align: center;
@@ -37,7 +32,7 @@ $large: 1000px;
         font-size: 2vw;
     }
         h3 {
-        font-size: 4.5vw;
+        font-size: 4vw;
         }
 }
 }
@@ -78,9 +73,8 @@ $large: 1000px;
         padding-top: 19%;
         width: 23%;
         h3 {
-            font-size: 3vw;
+            font-size: 1.2em;
             margin: 0;
-            //line-height: 0;
             top: 25%;
         }
     }
@@ -117,18 +111,22 @@ $large: 1000px;
     text-align: center;
     h3 {
         color: white;
-        font-size: 3vw;
+        font-size: 1.5em;
         line-height: 1em;
+        text-shadow: 0px 0px 20px black;
         text-transform: uppercase;
     }
     p {
         color: white;
+        font-size: .8em;
+        text-shadow: 0px 0px 20px black;
     }
 }
 
 @media screen and (min-width: $medium) {
     #build {
         text-align: left;
+        clear: both;
     }
 }
 
@@ -139,13 +137,16 @@ $large: 1000px;
         overflow: hidden;
         position: relative;
         .overlay {
-            background: rgba(255, 255, 255, 0.75);
+            background: rgba(255, 255, 255, 0.85);
             padding: 30px 20px;
             line-height: 1em;
             text-align: center;
             h4 {
-                font-size: 2em;
+                font-size: 1.8em;
                 margin-top: 0;
+            }
+            small {
+            font-size: .8em
             }
         }
     }
@@ -174,15 +175,88 @@ $large: 1000px;
         float: left;
         margin: 10px;
         min-height: 250px;
-        max-height: 250px;
-        width: 30%;
+        width: 29%;
         .overlay {
             h4 {
-                font-size: 1.25em;
+                font-size: 1.3em;
                 line-height: 1.25em;
             }
-            width: 60%;
-            height: 100%;
+            width: 63%;
+            height: 275px;
+        }
+        .button--inverted {
+            padding: 8px 10px;
+        }
+    }
+}
+
+@media screen and (min-width: $large) {
+    .blog .category {
+        float: left;
+        margin: 10px;
+        min-height: 250px;
+        width: 29%;
+        .overlay {
+            h4 {
+                font-size: 1.5em;
+                line-height: 1.5em;
+            }
+            width: 45%;
+            height: 300px;
+        }
+    }
+}
+
+// --------------------------------------- Newsletter
+
+.newsletter {
+    background: lighten($grey, 68%);
+    padding: 50px 0 90px 0;
+    text-align: center;
+    .row {
+        max-width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+        input#mce-EMAIL {
+            border: 0;
+            border-radius: 5px 5px 0 0;
+            font-size: .8em;
+            margin: 10px 0 0;
+            padding: 12px 20px;
+            text-align: center;
+            width: 80%;
+        }
+        .button {
+            border: 0;
+            border-radius: 0 0 5px 5px;
+            font-size: .8em;
+            width: 80%;
+        }
+        h4 {
+            color: $grey;
+            font-size: 1.8em;
+        }
+        p {
+            color: lighten($grey, 30%);
+            font-size: .8em;
+            line-height: 1.6;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }   
+}
+
+@media screen and (min-width: $large) {
+    .newsletter .row {
+        width: 45%;
+        .overlay {
+            h4 {
+                font-size: 1.5em;
+                line-height: 1.5em;
+            }
+            width: 45%;
+            height: 300px;
         }
     }
 }

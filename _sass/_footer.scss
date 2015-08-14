@@ -1,0 +1,52 @@
+footer {
+    font-size: 12px;
+    margin: 10px 0 20px;
+    padding-top: 20px;
+    text-align: center;
+    p {
+        color: $grey-light;
+        font-family: 'Lora', serif;
+        letter-spacing: .09em;
+        line-height: 2;
+    }
+      a {
+            color: $grey-light;
+            font-family: 'Lora', serif;
+            letter-spacing: .09em;
+        }
+    .social {
+        margin: 0 auto 30px;
+        padding: 0;
+        list-style-type: none;
+        li {
+            display: inline-block;
+        }
+        li a {
+            float: left;
+            height: 24px;
+            width: 24px;
+            background: lighten($grey, 50%) center no-repeat;
+            background-size: 16px 16px;
+            border-radius: 50%;
+        }
+    }
+
+    #twitter {
+    background-image: url(../images/twitter.svg);
+}
+
+#youtube {
+    background-image: url(../images/youtube.svg);
+}
+
+#facebook {
+    background-image: url(../images/facebook.svg);
+}
+
+#instagram {
+    background-image: url(../images/instagram.svg);
+}
+    
+}
+
+

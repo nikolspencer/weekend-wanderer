@@ -5,18 +5,25 @@ header {
     background-position: center;
     padding: 10px 0 12px 0;
     a {
-        font-size: 1.6vw;
         color: white;
         &:hover {
             color: white;
         }
+        font-size: .8em;
     }
     h1 {
         font-size: 4vw;
         letter-spacing: .08em;
+        line-height: 1.3;
         padding: 3% 0 0;
         text-align: center;
     }
+}
+.site-header h2 {
+    color: $white;
+    text-align: center;
+    font-size: 4vw;
+    margin: 0 0 10%;
 }
 
 @media screen and (min-width: $medium) {
@@ -28,6 +35,12 @@ header {
 @media screen and (min-width: $large) {
     header {
         min-height: 500px;
+        h1 {
+            font-size: 3vw;
+        }
+    }
+    .site-header h2 {
+        font-size: 3vw;
     }
 }
 
@@ -35,18 +48,25 @@ header {
 .nav-toggle {
     color: white;
     float: right;
-    font-size: 2.5vh;
+    font-size: 15px;
     margin-right: 10px;
     &:hover {
         cursor: pointer;
     }
 }
 
+@media screen and (min-width: $medium) {
+    .nav-toggle {
+        font-size: 23px;
+    }
+    
+}
+
 // ------------------------------------------ Navigation
 nav {
     background: $nav-background;
     overflow: hidden;
-    @include transition(height 0.3s);
+    @include transition (height 0.3s);
     &.hidden {
         height: 0;
     }
@@ -83,12 +103,4 @@ nav {
             width: $nav-item-width;
         }
     }
-}
-
-// ------------------------------------------ Footer
-footer {
-    border-top: 1px solid $hairline;
-    font-size: $small-font-size;
-    margin-top: 2em;
-    text-align: center;
 }

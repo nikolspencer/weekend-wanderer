@@ -99,7 +99,15 @@ p {
     font-family: 'Lora', serif;
     font-weight: 400;
 }
-
+ 
+small {
+    color: $black-absolute;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    letter-spacing: .05em;
+    line-height: 1.5;
+    
+}
 // ---------------------------------------- Code
 code {
     background: #ECF2FF;

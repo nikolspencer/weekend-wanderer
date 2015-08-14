@@ -1,10 +1,11 @@
 [class*="button"] {
     background: $coral;
+    border-radius: 5px;
     color: white;
     display: inline-block;
     font-size: 1em;
     letter-spacing: .05em;
-    padding: 12px 15px;
+    padding: 8px 12px;
     &:hover {
         background: darken($coral, 5%);
         color: white;

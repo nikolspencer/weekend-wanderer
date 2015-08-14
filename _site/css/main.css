@@ -48,7 +48,7 @@ figure {
     margin-bottom: 5px; }
 
 figcaption {
-  color: #828282;
+  color: #444;
   font-size: 14px; }
 
 .list__plain {
@@ -81,6 +81,13 @@ p {
   font-family: 'Lora', serif;
   font-weight: 400; }
 
+small {
+  color: #000000;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  letter-spacing: .05em;
+  line-height: 1.5; }
+
 code {
   background: #ECF2FF;
   padding: 4px 2px; }
@@ -93,8 +100,8 @@ a {
     color: #193366; }
 
 blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
+  color: #444;
+  border-left: 4px solid #aaaaaa;
   padding-left: 10px;
   font-size: 18px;
   letter-spacing: -1px;
@@ -112,7 +119,7 @@ blockquote {
   text-align: center; }
   .divider p {
     background: #fff;
-    color: #828282;
+    color: #444;
     padding: 0 15px;
     position: relative;
     display: inline-block;
@@ -176,19 +183,6 @@ blockquote {
 .grid__container {
   overflow: hidden; }
 
-#build {
-  text-align: left; }
-  #build [class*="block__"] {
-    background: #e8e8e8; }
-  @media screen and (min-width: 600px) {
-    #build [class*="block__"] {
-      border: 1px solid #FFF;
-      background: #3F576E;
-      color: #FFF; } }
-  @media screen and (min-width: 1000px) {
-    #build [class*="block__"] {
-      background: #990000; } }
-
 [class*="content-wrap--padded"] {
   overflow: hidden;
   padding: 10px;
@@ -199,15 +193,16 @@ blockquote {
     font-size: 110%; } }
 @media screen and (min-width: 1000px) {
   [class*="content-wrap"] {
-    font-size: 135%;
+    font-size: 120%;
     margin: 0 auto; } }
 [class*="button"] {
   background: #fa7b7f;
+  border-radius: 5px;
   color: white;
   display: inline-block;
   font-size: 1em;
   letter-spacing: .05em;
-  padding: 12px 15px; }
+  padding: 8px 12px; }
   [class*="button"]:hover {
     background: #f96267;
     color: white; }
@@ -226,12 +221,6 @@ blockquote {
   We don't want to use 'iPhone/Tablet/Desktop' as our breakpoint targets because these aren't the only devices out there. The content will tell you when it needs to be adjusted. Style for mobile then open your browser window up to the point where it looks goofy or the layout looks wrong. Thats your first breakpoint. Repeat as necessary. I usually use a small/medium/large approach.
 
 */
-.site-header h2 {
-  color: #FFF;
-  text-align: center;
-  font-size: 4vw;
-  margin: 0 0 10%; }
-
 .explore h2 {
   color: #444;
   font-size: .6em;
@@ -239,7 +228,7 @@ blockquote {
   text-align: center; }
 .explore h3 {
   color: #11a190;
-  font-size: 1.5em;
+  font-size: 5vw;
   letter-spacing: .08em;
   margin: 30px 0 10px;
   text-align: center; }
@@ -248,7 +237,7 @@ blockquote {
   .explore h2 {
     font-size: 2vw; }
   .explore h3 {
-    font-size: 4.5vw; } }
+    font-size: 4vw; } }
 .adventures {
   padding: 10px; }
   .adventures a {
@@ -281,7 +270,7 @@ blockquote {
     padding-top: 19%;
     width: 23%; }
     .adventures a h3 {
-      font-size: 3vw;
+      font-size: 1.2em;
       margin: 0;
       top: 25%; } }
 @media screen and (min-width: 1000px) {
@@ -308,27 +297,33 @@ blockquote {
   text-align: center; }
   #build h3 {
     color: white;
-    font-size: 3vw;
+    font-size: 1.5em;
     line-height: 1em;
+    text-shadow: 0px 0px 20px black;
     text-transform: uppercase; }
   #build p {
-    color: white; }
+    color: white;
+    font-size: .8em;
+    text-shadow: 0px 0px 20px black; }
 
 @media screen and (min-width: 600px) {
   #build {
-    text-align: left; } }
+    text-align: left;
+    clear: both; } }
 .blog .category {
   margin: 20px 0;
   overflow: hidden;
   position: relative; }
   .blog .category .overlay {
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.85);
     padding: 30px 20px;
     line-height: 1em;
     text-align: center; }
     .blog .category .overlay h4 {
-      font-size: 2em;
+      font-size: 1.8em;
       margin-top: 0; }
+    .blog .category .overlay small {
+      font-size: 0.8em; }
 
 #wander {
   background-image: url("/images/blog.jpg");
@@ -350,44 +345,113 @@ blockquote {
     float: left;
     margin: 10px;
     min-height: 250px;
-    max-height: 250px;
-    width: 30%; }
+    width: 29%; }
     .blog .category .overlay {
-      width: 60%;
-      height: 100%; }
+      width: 63%;
+      height: 275px; }
       .blog .category .overlay h4 {
-        font-size: 1.25em;
-        line-height: 1.25em; } }
+        font-size: 1.3em;
+        line-height: 1.25em; }
+    .blog .category .button--inverted {
+      padding: 8px 10px; } }
+@media screen and (min-width: 1000px) {
+  .blog .category {
+    float: left;
+    margin: 10px;
+    min-height: 250px;
+    width: 29%; }
+    .blog .category .overlay {
+      width: 45%;
+      height: 300px; }
+      .blog .category .overlay h4 {
+        font-size: 1.5em;
+        line-height: 1.5em; } }
+.newsletter {
+  background: #f1f1f1;
+  padding: 50px 0 90px 0;
+  text-align: center; }
+  .newsletter .row {
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; }
+    .newsletter .row input#mce-EMAIL {
+      border: 0;
+      border-radius: 5px 5px 0 0;
+      font-size: .8em;
+      margin: 10px 0 0;
+      padding: 12px 20px;
+      text-align: center;
+      width: 80%; }
+    .newsletter .row .button {
+      border: 0;
+      border-radius: 0 0 5px 5px;
+      font-size: .8em;
+      width: 80%; }
+    .newsletter .row h4 {
+      color: #444;
+      font-size: 1.8em; }
+    .newsletter .row p {
+      color: #919191;
+      font-size: .8em;
+      line-height: 1.6;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+
+@media screen and (min-width: 1000px) {
+  .newsletter .row {
+    width: 45%; }
+    .newsletter .row .overlay {
+      width: 45%;
+      height: 300px; }
+      .newsletter .row .overlay h4 {
+        font-size: 1.5em;
+        line-height: 1.5em; } }
 header {
   background: url(/images/camp-hero.jpg);
   background-size: cover;
   background-position: center;
   padding: 10px 0 12px 0; }
   header a {
-    font-size: 1.6vw;
-    color: white; }
+    color: white;
+    font-size: .8em; }
     header a:hover {
       color: white; }
   header h1 {
     font-size: 4vw;
     letter-spacing: .08em;
+    line-height: 1.3;
     padding: 3% 0 0;
     text-align: center; }
+
+.site-header h2 {
+  color: #FFF;
+  text-align: center;
+  font-size: 4vw;
+  margin: 0 0 10%; }
 
 @media screen and (min-width: 600px) {
   header {
     min-height: 300px; } }
 @media screen and (min-width: 1000px) {
   header {
-    min-height: 500px; } }
+    min-height: 500px; }
+    header h1 {
+      font-size: 3vw; }
+
+  .site-header h2 {
+    font-size: 3vw; } }
 .nav-toggle {
   color: white;
   float: right;
-  font-size: 2.5vh;
+  font-size: 15px;
   margin-right: 10px; }
   .nav-toggle:hover {
     cursor: pointer; }
 
+@media screen and (min-width: 600px) {
+  .nav-toggle {
+    font-size: 23px; } }
 nav {
   background: rgba(0, 0, 0, 0.35);
   overflow: hidden;
@@ -421,12 +485,6 @@ nav {
       text-align: center;
       margin-top: 20px;
       width: 25%; } }
-
-footer {
-  border-top: 1px solid #DDDDDD;
-  font-size: 14px;
-  margin-top: 2em;
-  text-align: center; }
 
 /**
  * Syntax highlighting styles
@@ -566,3 +624,39 @@ footer {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+footer {
+  font-size: 12px;
+  margin: 10px 0 20px;
+  padding-top: 20px;
+  text-align: center; }
+  footer p {
+    color: #aaaaaa;
+    font-family: 'Lora', serif;
+    letter-spacing: .09em;
+    line-height: 2; }
+  footer a {
+    color: #aaaaaa;
+    font-family: 'Lora', serif;
+    letter-spacing: .09em; }
+  footer .social {
+    margin: 0 auto 30px;
+    padding: 0;
+    list-style-type: none; }
+    footer .social li {
+      display: inline-block; }
+    footer .social li a {
+      float: left;
+      height: 24px;
+      width: 24px;
+      background: #c4c4c4 center no-repeat;
+      background-size: 16px 16px;
+      border-radius: 50%; }
+  footer #twitter {
+    background-image: url(../images/twitter.svg); }
+  footer #youtube {
+    background-image: url(../images/youtube.svg); }
+  footer #facebook {
+    background-image: url(../images/facebook.svg); }
+  footer #instagram {
+    background-image: url(../images/instagram.svg); }
