@@ -73,13 +73,13 @@ figcaption {
 h1 {
     color: $white;
     font-family: 'Oswald', sans-serif;
-    letter-spacing: .1em;
     text-transform: uppercase;
 }
 
 h2 {
     color: $black-absolute;
     font-family: 'Rock Salt', cursive;
+    font-size: 2vw;
     font-weight: 400;
     letter-spacing: .08em;
 }
@@ -91,7 +91,6 @@ h6 {
     color: $black-absolute;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    letter-spacing: .08em;
 }
 
 p {

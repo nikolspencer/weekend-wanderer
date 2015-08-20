@@ -58,12 +58,12 @@ figcaption {
 h1 {
   color: #FFF;
   font-family: 'Oswald', sans-serif;
-  letter-spacing: .1em;
   text-transform: uppercase; }
 
 h2 {
   color: #000000;
   font-family: 'Rock Salt', cursive;
+  font-size: 2vw;
   font-weight: 400;
   letter-spacing: .08em; }
 
@@ -73,8 +73,7 @@ h5,
 h6 {
   color: #000000;
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  letter-spacing: .08em; }
+  font-weight: 400; }
 
 p {
   color: #000000;
@@ -135,6 +134,7 @@ blockquote {
 
 .row {
   overflow: hidden;
+  padding: 0 10px;
   width: 100%; }
 
 [class*="block__"] {
@@ -185,16 +185,18 @@ blockquote {
 
 [class*="content-wrap--padded"] {
   overflow: hidden;
-  padding: 10px;
-  max-width: 1400px; }
+  padding: 10px; }
 
 @media screen and (min-width: 600px) {
   [class*="content-wrap"] {
-    font-size: 110%; } }
+    font-size: 110%;
+    width: 90%;
+    margin: 0 auto 40px; } }
 @media screen and (min-width: 1000px) {
   [class*="content-wrap"] {
     font-size: 120%;
-    margin: 0 auto; } }
+    width: 90%;
+    margin: 0 auto 80px; } }
 [class*="button"] {
   background: #fa7b7f;
   border-radius: 5px;
@@ -223,21 +225,22 @@ blockquote {
 */
 .explore h2 {
   color: #444;
-  font-size: .6em;
-  margin: 0 0 15px;
+  font-size: .7em;
+  margin: 20px 0 30px;
   text-align: center; }
 .explore h3 {
   color: #11a190;
   font-size: 5vw;
-  letter-spacing: .08em;
-  margin: 30px 0 10px;
+  margin: 40px 0 10px;
   text-align: center; }
 
 @media screen and (min-width: 600px) {
   .explore h2 {
-    font-size: 2vw; }
+    font-size: 2vw;
+    margin: 20px 0 50px; }
   .explore h3 {
-    font-size: 4vw; } }
+    font-size: 4vw;
+    margin: 80px 0 10px; } }
 .adventures {
   padding: 10px; }
   .adventures a {
@@ -265,17 +268,19 @@ blockquote {
 @media screen and (min-width: 600px) {
   .adventures a {
     float: left;
-    margin: 1%;
-    padding: 50px 0;
-    padding-top: 19%;
-    width: 23%; }
+    margin: 1.5%;
+    padding: 0 0;
+    padding-top: 21%;
+    width: 22%; }
     .adventures a h3 {
       font-size: 1.2em;
       margin: 0;
-      top: 25%; } }
+      top: 15%; } }
 @media screen and (min-width: 1000px) {
   .adventures {
-    padding: 10px 40px; } }
+    padding: 10px 40px; }
+    .adventures a h3 {
+      top: 30%; } }
 #road {
   background-image: url("/images/road_trip.jpg"); }
 
@@ -310,20 +315,22 @@ blockquote {
   #build {
     text-align: left;
     clear: both; } }
-.blog .category {
-  margin: 20px 0;
+.blog {
   overflow: hidden;
-  position: relative; }
-  .blog .category .overlay {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 30px 20px;
-    line-height: 1em;
-    text-align: center; }
-    .blog .category .overlay h4 {
-      font-size: 1.8em;
-      margin-top: 0; }
-    .blog .category .overlay small {
-      font-size: 0.8em; }
+  width: 100%; }
+  .blog .category {
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative; }
+    .blog .category .overlay {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 30px 20px;
+      line-height: 1em;
+      text-align: center; }
+      .blog .category .overlay h4 {
+        font-size: 1.8em; }
+      .blog .category .overlay small {
+        font-size: 0.8em; }
 
 #wander {
   background-image: url("/images/blog.jpg");
@@ -341,19 +348,21 @@ blockquote {
   background-size: cover; }
 
 @media screen and (min-width: 600px) {
-  .blog .category {
-    float: left;
-    margin: 10px;
-    min-height: 250px;
-    width: 29%; }
-    .blog .category .overlay {
-      width: 63%;
-      height: 275px; }
-      .blog .category .overlay h4 {
-        font-size: 1.3em;
-        line-height: 1.25em; }
-    .blog .category .button--inverted {
-      padding: 8px 10px; } }
+  .blog {
+    margin: 1.5%;
+    width: 98.3%; }
+    .blog .category {
+      float: left;
+      margin: 15px;
+      width: 28.343%; }
+      .blog .category .overlay {
+        width: 63%;
+        height: 275px; }
+        .blog .category .overlay h4 {
+          font-size: 1.3em;
+          line-height: 1.25em; }
+      .blog .category .button--inverted {
+        padding: 8px 10px; } }
 @media screen and (min-width: 1000px) {
   .blog .category {
     float: left;
@@ -421,7 +430,7 @@ header {
     font-size: 4vw;
     letter-spacing: .08em;
     line-height: 1.3;
-    padding: 3% 0 0;
+    margin-bottom: 30px;
     text-align: center; }
 
 .site-header h2 {

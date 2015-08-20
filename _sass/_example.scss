@@ -13,15 +13,14 @@ $large: 1000px;
 .explore {
     h2 {
         color: $gray;
-        font-size: .6em;
-        margin: 0 0 15px;
+        font-size: .7em;
+        margin: 20px 0 30px;
         text-align: center;
     }
     h3 {
         color: $green;
         font-size: 5vw;
-        letter-spacing: .08em;
-        margin: 30px 0 10px;
+        margin: 40px 0 10px;
         text-align: center;
     }
 }
@@ -30,9 +29,11 @@ $large: 1000px;
     .explore {
         h2 {
         font-size: 2vw;
+        margin: 20px 0 50px;
     }
         h3 {
         font-size: 4vw;
+        margin: 80px 0 10px;
         }
 }
 }
@@ -68,14 +69,14 @@ $large: 1000px;
 @media screen and (min-width: $medium) {
     .adventures a {
         float: left;
-        margin: 1%;
-        padding: 50px 0;
-        padding-top: 19%;
-        width: 23%;
+        margin: 1.5%;
+        padding: 0 0;
+        padding-top: 21%;
+        width: 22%;
         h3 {
             font-size: 1.2em;
             margin: 0;
-            top: 25%;
+            top: 15%;
         }
     }
 }
@@ -83,6 +84,9 @@ $large: 1000px;
 @media screen and (min-width: $large) {
     .adventures {
         padding: 10px 40px;
+        a h3 {
+            top: 30%;
+        }
     }
 }
 #road {
@@ -132,6 +136,9 @@ $large: 1000px;
 
 // --------------------------------------- Blog
 .blog {
+    overflow: hidden;
+    width: 100%;
+    //padding: 20px 40px;
     .category {
         margin: 20px 0;
         overflow: hidden;
@@ -143,7 +150,6 @@ $large: 1000px;
             text-align: center;
             h4 {
                 font-size: 1.8em;
-                margin-top: 0;
             }
             small {
             font-size: .8em
@@ -171,21 +177,25 @@ $large: 1000px;
 }
 
 @media screen and (min-width: $medium) {
-    .blog .category {
-        float: left;
-        margin: 10px;
-        min-height: 250px;
-        width: 29%;
-        .overlay {
-            h4 {
-                font-size: 1.3em;
-                line-height: 1.25em;
+    .blog {
+        margin: 1.5%;
+        width: 98.3%;
+        .category {
+            float: left;
+            margin: 15px;
+            //min-height: 250px;
+            width: 28.343%;
+            .overlay {
+                h4 {
+                    font-size: 1.3em;
+                    line-height: 1.25em;
+                }
+                width: 63%;
+                height: 275px;
             }
-            width: 63%;
-            height: 275px;
-        }
-        .button--inverted {
-            padding: 8px 10px;
+            .button--inverted {
+                padding: 8px 10px;
+            }
         }
     }
 }
@@ -207,6 +217,9 @@ $large: 1000px;
     }
 }
 
+.browse {
+    
+}
 // --------------------------------------- Newsletter
 
 .newsletter {
